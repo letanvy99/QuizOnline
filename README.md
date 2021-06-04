@@ -14,6 +14,6 @@ This is an application that helps teachers to take tests, compose questions into
  2. Change connection String in Source Code
  3. Run Project
 # Video about project
-[![Everything Is AWESOME](https://www.youtube.com/watch?v=XATqMRdHBh8)](https://www.youtube.com/watch?v=XATqMRdHBh8 "Everything Is AWESOME")
+[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=XATqMRdHBh8)](https://www.youtube.com/watch?v=XATqMRdHBh8 "Everything Is AWESOME")
  # Contact
  My Email: letanvy020799er@gmail.com
