@@ -1,0 +1,157 @@
+.card-quiz {
+    background-color: white;
+    box-shadow: grey 0px 5px;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+
+.card-quiz hr {
+    margin: 0% 0% -2% 0% !important;
+}
+
+.card-quiz h1 {
+    color: gray;
+    font-size: 30px;
+    padding-left: 1%;
+}
+
+.card-quiz span {
+    margin-left: 95%;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.card-quiz span:hover {
+    color: red;
+}
+
+.card-quiz input {
+    margin-top: 5%;
+}
+
+.addAnswer button h1 {
+    font-size: 15px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.addAnswer button {
+    width: 100%;
+    padding: 0% 3% 0% 3% !important;
+    margin: 4% 0% 0% 0%;
+}
+
+.myFile {
+    padding: 0.3%;
+}
+
+.myFile input:hover {
+    cursor: pointer;
+}
+
+.DeleteAnswer {
+    margin-left: 90%;
+    transition: color 0.5s;
+}
+
+.DeleteAnswer:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.typeQuestion {
+    margin-top: 1%;
+    width: 20%;
+}
+
+.btn {
+    margin: 1% 0% 0% 40%;
+}
+
+input#CheckRight {
+    margin: 0% 0% 0% 1%;
+}
+
+.AddQuestion {
+    background-color: white;
+    border: 1px grey dotted;
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 2% 0% 1% 5%;
+    text-align: center;
+}
+
+.AddQuestion h1 {
+    font-size: 30px;
+    color: gray;
+}
+.button{
+    margin: 0;
+    margin-top: 2rem; 
+}
+.button a{
+    margin: 0;
+}
+:root{
+    --primary:#337ab7;
+    --secondary:#255680;
+}
+.dropdown{
+    width: 100%;
+    max-width: 25rem;
+    font-size: 2rem;
+    color: white;
+    
+    font-family: cursive;
+    
+}
+.dropdown_select, .dropdown_item{
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.dropdown_select{
+    border-radius: 6px;
+    
+}
+.dropdown_item:first-child{
+    border-radius: 4px 4px 0 0;
+}
+.dropdown_item:last-child{
+    border-radius: 0 0 4px 4px;
+}
+.dropdown_list{
+    margin-top: 1rem;
+    position: relative;
+    display: none;
+}
+.dropdown_list a {
+    text-decoration: none;
+}
+
+.dropdown_item:first-child:before{
+    content: "";
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--primary);
+}
+.dropdown_item:hover{
+    background-color: var(--secondary);
+    transition: background-color 0.3s linear;
+}
+.dropdown_item:first-child:hover:before{
+    border-bottom-color: var(--secondary);
+    transition: border-bottom-color 0.3s linear;
+}
+.dropdown:hover .dropdown_list{
+    display: block;
+}

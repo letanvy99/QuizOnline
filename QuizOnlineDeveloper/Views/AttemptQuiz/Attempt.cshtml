@@ -1,0 +1,297 @@
+﻿@model List<Model.ModelCustom.ViewQuestion>
+@using Model.ModelCustom
+@{
+    Layout = null;
+}
+@{
+    ExamCustom exam = (ExamCustom)TempData["modelExam"];
+    InfoUserTest user = (InfoUserTest)TempData["User"];
+    var minutes = TempData["EndTime"];
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--  template structure css -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
+
+
+    <link href="~/Asserts/Client/css/Quiz.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Asserts/Client/css/modal-for-quiz.css">
+    <link rel="stylesheet" href="~/Asserts/Client/css/Clock.css" />
+</head>
+
+<body>
+    @using (Html.BeginForm("SaveAnswer", "AttemptQuiz", FormMethod.Post, new { @id = "form" }))
+    {
+        <input type="hidden" name="ExamID" value="@exam.ExamID" />
+        <input type="hidden" name="QuantityQuestion" value="@exam.QuantityQuestion" />
+        <input type="hidden" name="QuantityEasyQues" value="@exam.QuantityEasyQues" />
+        <input type="hidden" name="QuantityMediumQues" value="@exam.QuantityMediumQues" />
+        <input type="hidden" name="QuantityHardQues" value="@exam.QuantityHardQues" />
+        <input type="hidden" name="ExamCategoryID" value="@exam.ExamCategoryID" />
+        <input type="hidden" name="UserID" value="@exam.UserID" />
+        <input type="hidden" name="ClassExamID" value="@exam.ClassExamID" />
+        <input type="hidden" name="UserClassExamID" value="@ViewBag.UserClassExamID" />
+        <div class="wapper">
+            <section class="quiz-view">
+                <div class="container">
+                    <div class="quiz-title ">
+                        <h2 class="text-center"><i class="fas fa-user-edit"></i> Kiểm tra</h2>
+                        <p class="font-weight-bold">Bài Kiểm Tra : <span class="font-weight-normal">@user.NameExam</span></p>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <p class="font-weight-bold">Họ tên: <span class="font-weight-normal">@user.FullName</span></p>
+                                <p class="font-weight-bold">Tài khoản: <span class="font-weight-normal">@user.UserName</span></p>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <p class="font-weight-bold">Lớp : <span class="font-weight-normal">@user.ClassName</span></p>
+                                <p class="font-weight-bold">Ngày : <span class="font-weight-normal">@user.Date</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-3" id="my-box">
+
+                            <div class="container dong-ho-dem-nguoc text-center col-12">
+                                <p id="donghodemnguoc">
+                                    <span id="hourRemaining"></span>
+                                    <span id="dau2cham"><i class="fas fa-ellipsis-v"></i></span>
+                                    <span id="minRemaining"></span>
+                                    <span id="dau2cham"><i class="fas fa-ellipsis-v"></i></span>
+                                    <span id="secRemaining"></span>
+                                </p>
+                            </div>
+                            <div class="row row-list scrollable" id="row-list">
+                                @for (int i = 1; i < Model.Count + 1; i++)
+                                {
+                                    var count = 0;
+                                    if (Model[i - 1].Options.Count <= 0)
+                                    {
+                                        <button type="submit" class="btn-question" name="questionNo" value="@i">@(i)</button>
+                                    }
+                                    else
+                                    {
+                                        for (int j = 0; j < Model[i - 1].Options.Count; j++)
+                                        {
+                                            if (Model[i - 1].Options[j].Check)
+                                            {
+                                                count++;
+                                            }
+                                        }
+                                        if (count > 0)
+                                        {
+                                            <button type="submit" class="btn-question-done" name="questionNo" value="@i">@(i)</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="submit" class="btn-question" name="questionNo" value="@i">@(i)</button>
+                                        }
+                                    }
+
+
+                                }
+                                <br>
+                            </div>
+                            <br>
+                            <div class="btn-slide text-center btnSubmit">
+
+                                <button type="submit" name="submit" id="submit" value="submit" class="btn btn-danger btn-sm">Nộp bài</button>
+                            </div>
+                        </div>
+                        <!-- left-side-bar -->
+
+                        <div class="col-9" id="my-question">
+                            @{ var temp = 0;}
+                            @for (int j = 0; j < Model.Count; j++)
+                            {
+
+                                if ((j + 1) >= ViewBag.QuestionNoMin && (j + 1) <= ViewBag.QuestionNoMax)
+                                {
+                                    switch (Model[j].QuestionType)
+                                    {
+                                        // 1 đáp án đúng
+                                        case 0:
+
+                                            <div class="card mb-2">
+                                                <div class="card-body">
+                                                    <h6 class="card-title"><i style="color: #a0d2eb;" class="far fa-question-circle"></i>  @(j + 1)/ @Model.Count :</h6>
+                                                    <p class="card-text">@Html.Raw(Model[j].QuestionContent)</p>
+                                                    @if (Model[j].Image != null)
+                                                    {
+                                                        <img src="@Model[j].Image" width="100%" height="100%" />
+
+                                                    }
+                                                    <p></p>
+                                                    <input type="hidden" name="QNB" value="@Model[j].QuestionID" />
+                                                    @for (int k = 0; k < Model[j].Options.Count; k++)
+                                                    {
+                                                        <input type="hidden" name="UserChoices[@temp].isRight" value="@Model[j].Options[k].isTrue" />
+                                                        <input type="hidden" name="UserChoices[@temp].questionID" value="@Model[j].QuestionID" />
+                                                        <input type="radio" name="UserChoices[@temp].answerID" value="@Model[j].Options[k].AnswerID" @(Model[j].Options[k].Check == true ? "CHECKED" : "") /> @Model[j].Options[k].AnswerContent
+                                                        <br />
+                                                    }
+                                                    @{ temp++;}
+                                                </div>
+                                            </div>
+                                            break;
+                                        // nhiều đáp án đúng
+                                        case 1:
+                                            <div class="card mb-2">
+                                                <div class="card-body">
+                                                    <h6 class="card-title"><i style="color: #a0d2eb;" class="far fa-question-circle"></i>  @(j + 1)/ @Model.Count :</h6>
+                                                    <p class="card-text">@Html.Raw(Model[j].QuestionContent)</p>
+                                                    @if (Model[j].Image != null)
+                                                    {
+                                                        <img src="@Model[j].Image" width="100%" height="100%" />
+
+                                                    }
+                                                    <p></p>
+                                                    <input type="hidden" name="QNB" value="@Model[j].QuestionID" />
+                                                    @for (int k = 0; k < Model[j].Options.Count; k++)
+                                                    {
+                                                        <input type="hidden" name="UserChoices[@temp].isRight" value="@Model[j].Options[k].isTrue" />
+                                                        <input type="hidden" name="UserChoices[@temp].questionID" value="@Model[j].QuestionID" />
+                                                        <input type="checkbox" name="UserChoices[@temp].answerID" value="@Model[j].Options[k].AnswerID" @(Model[j].Options[k].Check == true ? "CHECKED" : "") /> @Model[j].Options[k].AnswerContent
+                                                        <br />
+                                                    }
+                                                    @{ temp++;}
+                                                </div>
+                                            </div>
+                                            break;
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="modal modal-exam-code" id="modal-timeout" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hết giờ làm bài</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Cuộc sống nở hoa <i class="fas fa-laugh-beam fa-2x"></i> hay cuộc đời bế tắc <i class="fas fa-wheelchair fa-2x"></i>
+                        </span>
+                    </div>
+                    <div class="modal-footer align-center">
+                        <button type="button" class="btn btn-primary">Xem kết quả</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <script>
+        var dt = '@minutes';
+        var dateAr = dt.split('-'); //dd-MM-yyyy
+        var end = new Date(dateAr[1] + '/' + dateAr[0] + '/' + dateAr[2]); //dd/MM/yyyy (Date)
+        var now = new Date().getTime();
+        // Lấy số thời gian chênh lệch
+        var distance = end - now;
+        console.log('time' + distance);
+        // Tính toán số ngày, giờ, phút, giây từ thời gian chênh lệch
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        function startTick() {
+            document.getElementById("hourRemaining").innerText = hours;
+            document.getElementById("minRemaining").innerText = minutes;
+            document.getElementById("secRemaining").innerText = seconds;
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = end - now;
+                // Tính toán số ngày, giờ, phút, giây từ thời gian chênh lệch
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                // Lấy thời gian hiện tại
+                if (distance > 0) {
+                    // HIển thị chuỗi thời gian trong thẻ p
+                    document.getElementById("hourRemaining").innerText = hours;
+                    document.getElementById("minRemaining").innerText = minutes;
+                    document.getElementById("secRemaining").innerText = seconds;
+                    console.log(distance);
+                }
+                //if (distance < 300000) {
+                //    document.getElementById("donghodemnguoc").innerHTML =
+                //        '<span class ="divHrsBelow5Mins">' + hours + '</span>' + "<span class='dau2cham'>:</span>"
+                //        + '<span class ="divHrsBelow5Mins">' + minutes + '</span>' + "<span class='dau2cham'>:</span>" + '<span class ="divHrsBelow5Mins">' + seconds + '</span>';
+                //}
+                // Nếu thời gian kết thúc, hiển thị chuỗi thông báo
+                if (distance <= 0) {
+                    clearInterval(x);
+                    document.getElementById("submit").click();
+                    //document.getElementById("donghodemnguoc").innerHTML = "<span class='text-danger'>Hết giờ!</span>";
+                    //$('#modal-timeout').modal();
+                }
+            }, 1000);
+        }
+        startTick();
+        // ClassName=“alert alert-danger &&{isActive} active”
+        $('.scrollable').on('mousewheel DOMMouseScroll', function (e) {
+            var e0 = e.originalEvent,
+                delta = e0.wheelDelta || -e0.detail;
+
+            this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+            e.preventDefault();
+        });
+
+
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var left = document.getElementById("my-box");
+        var right = document.getElementById("my-question");
+        var row = document.getElementById("row-list");
+        var sticky = left.offsetTop;
+        var sticky = right.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                left.classList.add("sticky");
+                right.classList.add("sticky1");
+                row.classList.add("rowlist");
+            } else {
+                left.classList.remove("sticky");
+                right.classList.remove("sticky1");
+            }
+        }
+    </script>
+</body>
+
+</html>

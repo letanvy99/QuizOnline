@@ -1,0 +1,54 @@
+﻿@model Model.ModelCustom.ContactToAdmin
+<section class="contact-block">
+    <div class="contact-form">
+        <div class="section-title">
+            <h2>Liên hệ với chúng tôi</h2>
+        </div>
+        <div class="form-filde" id="Y">
+            @using (Html.BeginForm("ContactUs", "Contact", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                if (ViewBag.Success != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade in">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Thành công!</strong>
+                        <div class="input-box">
+                            <p class="">@ViewBag.Success</p>
+                        </div>
+                    </div>
+                }
+                if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-warning alert-dismissible fade in" id="alertError">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Lỗi!</strong>
+                        <div class="input-box">
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                }
+                <div class="input-box">
+                    @Html.TextBoxFor(model => model.Name, new { @placeholder = "Họ & Tên" })
+                </div>
+                <div class="input-box">
+                    @Html.TextBoxFor(model => model.Email, new { @placeholder = "Địa chỉ mail của bạn" })
+                </div>
+                <div class="input-box">
+                    @Html.TextBoxFor(model => model.Subject, new { @placeholder = "Tiêu đề" })
+                </div>
+                <div class="input-box">
+                    @Html.TextAreaFor(model => model.Content, new { @placeholder = "Tin nhắn", @rows = "2" })
+                </div>
+                <div class="submit-slide" style="text-align: center !important;">
+                    <input type="submit" value="Gửi Mail" class="btn">
+                </div>
+
+            }
+        </div>
+    </div>
+    <div class="map-responsive map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.594359723897!2d108.24099841538234!3d16.03461814462248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175ea5d8d99d%3A0x2e7e2969e5e69555!2zMTQgRG_Do24gVeG6qW4sIEtodcOqIE3hu7ksIE5nxakgSMOgbmggU8ahbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1596101014216!5m2!1svi!2s"
+                width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>

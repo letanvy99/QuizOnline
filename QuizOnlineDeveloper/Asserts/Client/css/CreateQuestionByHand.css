@@ -1,0 +1,96 @@
+﻿/*.buttonAddImg {
+    float: left;
+    cursor: pointer;
+    border: 1px grey;
+    background-color: rgb(2, 112, 175);
+    color: whitesmoke;
+    width: 15%;
+    padding: 1%;
+    margin-left: 1rem;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+    .buttonAddImg:hover {
+        background-color: rgb(61, 156, 245);
+        color: whitesmoke;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+.test {
+    background-color: rebeccapurple;
+}
+
+.col-lg-12 {
+    margin-bottom: 4%;
+}
+
+.TypeHardQuestion {
+    width: 30%;
+}
+
+.categoryclass {
+    width: 50%;
+}
+
+.inputImg {
+    width: 50%;
+    float: left;
+}
+
+h4 {
+    float: right;
+}
+
+*/
+.buttonAddImg {
+    float: left;
+    cursor: pointer;
+    border: 1px grey;
+    background-color: rgb(2, 112, 175);
+    color: whitesmoke;
+    width: 15%;
+    padding: 1%;
+    margin-left: 1rem;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+    .buttonAddImg:hover {
+        background-color: rgb(61, 156, 245);
+        color: whitesmoke;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+.test {
+    background-color: rebeccapurple;
+}
+
+.col-lg-12 {
+    margin-bottom: 4%;
+}
+
+.TypeHardQuestion {
+    width: 30%;
+}
+
+.categoryclass {
+    width: 50%;
+}
+
+.inputImg {
+    width: 50%;
+    float: left;
+}
+
+h4 {
+    float: right;
+}
+
+
+
+.AnswerBonus {
+    margin-top: 20px;
+}
+
+    .AnswerBonus small input {
+        margin-left: 0.7%;
+    }

@@ -1,0 +1,220 @@
+﻿@model List<Model.EF.User>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Quản lí thông tin người dùng</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Thông tin cơ bản</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+                <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <section class="col-lg-12 connectedSortable">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Danh sách người dùng</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Họ & Tên</th>
+                                        <th>Email</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Trạng Thái</th>
+                                        <th>Kích hoạt</th>
+                                        <th>Chức năng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            Trần Văn A
+                                        </td>
+                                        <td>abc@gmail.com</td>
+                                        <td> 0943567129</td>
+                                        <td>Hoạt Động</td>
+                                        <td>Đã kích hoạt</td>
+                                        <td style="word-spacing: 20px;">
+                                            <a data-toggle="modal" data-target="#cartModal">
+                                                <i class="fas fa-eye"
+                                                   style="color: blue;"></i>
+                                            </a>
+
+                                            <i style="color: red;" class="fas fa-lock"></i>
+                                            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog"
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true"
+                                                 style="word-spacing: 2px !important;">
+                                                <div class="modal-dialog modal-lg modal-dialog-centered"
+                                                     style="max-width: 1200px !important;" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header border-bottom-0">
+                                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                                Thông tin chi tiết
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <table class="table table-image">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col"></th>
+                                                                        <th scope="col">ID</th>
+                                                                        <th scope="col">Họ & Tên</th>
+                                                                        <th scope="col">Số điện thoại</th>
+                                                                        <th scope="col">Email</th>
+                                                                        <th scope="col">Địa chỉ</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="w-25">
+                                                                            <img src="https://i.pinimg.com/originals/45/d9/8a/45d98aa922bef6b5213b488dc36a8764.png"
+                                                                                 class="img-fluid img-thumbnail" alt="Sheep">
+                                                                        </td>
+                                                                        <td>1</td>
+                                                                        <td>Lê Tấn Vỹ</td>
+                                                                        <td>0984573530</td>
+                                                                        <td>leyanvy@gmail.com</td>
+                                                                        <td>Quế sơn, Quảng Nam, Đà Nẵng</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- <div class="d-flex justify-content-end">
+                                                              <h5>Total: <span class="price text-success">89$</span></h5>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="modal-footer border-top-0">
+                                                            <button type="button" class="btn btn-secondary float-right"
+                                                                    data-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            Trần Văn A
+                                        </td>
+                                        <td>abc@gmail.com</td>
+                                        <td> 0943567129</td>
+                                        <td>Hoạt Động</td>
+                                        <td>Đã kích hoạt</td>
+                                        <td style="word-spacing: 20px;">
+                                            <a data-toggle="modal" data-target="#cartModal">
+                                                <i class="fas fa-eye"
+                                                   style="color: blue;"></i>
+                                            </a>
+
+                                            <i style="color: red;" class="fas fa-lock"></i>
+                                            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog"
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true"
+                                                 style="word-spacing: 2px !important;">
+                                                <div class="modal-dialog modal-lg modal-dialog-centered"
+                                                     style="max-width: 1200px !important;" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header border-bottom-0">
+                                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                                Thông tin chi tiết
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <table class="table table-image">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col"></th>
+                                                                        <th scope="col">ID</th>
+                                                                        <th scope="col">Họ & Tên</th>
+                                                                        <th scope="col">Số điện thoại</th>
+                                                                        <th scope="col">Email</th>
+                                                                        <th scope="col">Địa chỉ</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="w-25">
+                                                                            <img src="https://i.pinimg.com/originals/45/d9/8a/45d98aa922bef6b5213b488dc36a8764.png"
+                                                                                 class="img-fluid img-thumbnail" alt="Sheep">
+                                                                        </td>
+                                                                        <td>1</td>
+                                                                        <td>Lê Tấn Vỹ</td>
+                                                                        <td>0984573530</td>
+                                                                        <td>leyanvy@gmail.com</td>
+                                                                        <td>Quế sơn, Quảng Nam, Đà Nẵng</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- <div class="d-flex justify-content-end">
+                                                              <h5>Total: <span class="price text-success">89$</span></h5>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="modal-footer border-top-0">
+                                                            <button type="button" class="btn btn-secondary float-right"
+                                                                    data-dismiss="modal">
+                                                                Close
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Họ & Tên</th>
+                                        <th>Email</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Trạng Thái</th>
+                                        <th>Kích hoạt</th>
+                                        <th>Chức năng</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </section>
+                <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

@@ -1,0 +1,118 @@
+﻿@model Model.ModelCustom.UserLoginCustom
+<div class="quck-nav">
+    <div class="container">
+        <div class="contact-no">
+            <a href="#">
+                <i class="fa fa-map-marker"></i>Tòa Nhà FPT Complex, Đường Nam Kỳ
+                Khởi Nghĩa, Phường Hoà Hải, Quận Ngũ Hành Sơn, TP Đà Nẵng
+            </a>
+        </div>
+        <div class="contact-no"><a href="#"><i class="fa fa-phone"></i>0984 888 888</a></div>
+        <!-- <div class="contact-no"><a href="#"><i class="fa fa-globe"></i>academy.com</a></div> -->
+        <div class="quck-right">
+            <div class="right-link language-select">
+                <a href="javascript:void(0);"><i class="fa fa-language"></i>Tiếng Việt</a>
+                <ul class="language-list">
+                    <li><a href="#">Tiếng Anh</a></li>
+                </ul>
+            </div>
+            <div class="right-link">
+                <a data-toggle="modal" data-target="#myModal">
+                    <i class="fa  fa-user-plus"></i>Đăng nhập/Đăng Kí
+                </a>
+
+                <!-- The Modal -->
+
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4>Đăng nhập/Đăng Kí</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="container containermodal" id="container">
+                                    <div class="form-container sign-up-container ">
+                                        <form action="#">
+                                            <h2>Đăng kí</h2>
+
+                                            <br>
+                                            <input type="text" placeholder="Tài Khoản" />
+                                            <input type="email" placeholder="Địa chỉ mail" />
+                                            <input type="password" placeholder="Mật khẩu" />
+                                            <input type="password" placeholder="Nhập lại mật khẩu" />
+                                            <br>
+                                            <button type="submit">Đăng kí</button>
+                                        </form>
+                                    </div>
+
+
+
+
+                                    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                                    {
+                                        @Html.ValidationSummary(false,"","error")
+                                        <div class="form-container sign-in-container ">
+                                            <h2>Đăng Nhập</h2>
+                                            <div class="social-container">
+                                                <a href="#" class="social">
+                                                    <i class="fa fa-2x fa-facebook-f"
+                                                       style="color: #4267B2;"></i>
+                                                </a>
+                                                <a href="#" class="social">
+                                                    <i class="fa fa-2x fa-google"
+                                                       style="color: #DB4437;"></i>
+                                                </a>
+                                            </div>
+                                            <span>hoặc</span>
+                                            <br />
+                                            <div class="col-lg-12">
+                                                @Html.TextBoxFor(model => model.UserName)
+                                                @Html.TextBoxFor(model => model.Password)
+                                            </div>
+                                            <label></label>
+
+                                            <br />
+                                           
+                                            @Html.CheckBoxFor(model => model.RememberMe)Remember me
+                                     <br />
+                                            @Html.ActionLink("Quên mật khẩu", "Index", "ResetPass", new { @class = ViewData["actionLinkClass"] })
+
+                                            <br />
+                                            <button type="submit">Đăng nhập</button>
+
+                                        </div>
+                                    }
+
+
+
+                                    <div class="overlay-container">
+                                        <div class="overlay">
+                                            <div class="overlay-panel overlay-left">
+                                                <h2>Chào mừng bạn trở lại!</h2>
+                                                <p>Để giữ kết nối với chúng tôi xin hãy đăng nhập.</p>
+                                                <button class="ghost" id="signIn">Đăng nhập</button>
+                                            </div>
+                                            <div class="overlay-panel overlay-right">
+                                                <h2>Xin chào bạn!</h2>
+                                                <p>
+                                                    Đăng kí thông tin của bạn để có thể đồng hành cùng chúng tôi.
+                                                </p>
+                                                <button class="ghost" id="signUp">Đăng kí</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+        </div>
+    </div>
+</div>

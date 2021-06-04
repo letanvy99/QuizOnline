@@ -1,0 +1,29 @@
+.container .dong-ho-dem-nguoc p {
+    font-family: serif;
+    font-size: 25px;
+    color: white;
+}
+
+.dau2cham {
+    color: black;
+}
+
+.divHrs {
+    border-radius: 5px;
+    background-color: #6a6969;
+    padding: 10px;
+}
+.divHrsBelow5Mins {
+    border-radius: 5px;
+    background-color: #bf2020;
+    padding: 10px;
+}
+
+.container .dong-ho-dem-nguoc {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+
+

@@ -1,0 +1,280 @@
+﻿@model Model.EF.Question
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<link href="~/Asserts/Client/css/MakeQuestions.css" rel="stylesheet" />*@
+<link href="~/Asserts/Client/css/dropdown-menu-dashboard-user.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+
+<section class="banner inner-page">
+    <div class="banner-img"><img src="~/Asserts/Client/images/banner/quiz.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Tạo câu hỏi</h1>
+        </div>
+    </div>
+</section>
+<section class="breadcrumb white-bg">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Make Quiz</a></li>
+        </ul>
+    </div>
+</section>
+<section class="quiz-view">
+
+    <form action="">
+        <div class="container">
+
+            @*<div class="quiz-title">
+                    <h1 class=" text-center">Tạo câu hỏi</h>
+                </div>*@
+            <div class="form-group">
+                <!-- div start row -->
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="row">
+
+                            <div class="dropdown">
+                                <div class="dropdown_select ">
+                                    <span class="dropdown_selected a">Type</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <div class="dropdown_list">
+                                    <li class="dropdown_item NormalQuestion">
+                                        <span class="dropdown_text">Normal</span>
+                                        <i class="fas fa-text-width"></i>
+                                    </li>
+                                    <li class="dropdown_item IMGQuestion">
+                                        <span class="dropdown_text ">Ảnh</span>
+                                        <i class="fas fa-images"></i>
+                                    </li>
+                                    <li class="dropdown_item MediaQuestion">
+                                        <span class="dropdown_text ">Media</span>
+                                        <i class="fas fa-photo-video"></i>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-9">
+
+                        <div class="col-lg-12 ">
+                            @if (TempData["AlertMessage"] != null)
+                            {
+                                <div id="AlertBox" class="alert @TempData["AlertType"] showAlert">
+                                    @TempData["AlertMessage"]
+                                    Bạn muốn <a href="/Bank/Index" class="alert-link">xem danh sách vừa tạo </a>hay quay về <a href="/Home/Index" class="alert-link">Trang chủ</a>
+                                </div>
+                            }
+                            <div class="showAlert row"></div>
+                            <div class="col-lg-2">
+                                <h4>Thư Mục</h4>
+                            </div>
+                            <div class="col-lg-10">
+
+                                @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.categoryList, "CategoryID", "Typename", "UserID"), "Please select", new { @class = "form-control categoryclass", id = "dllCategory" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 ">
+                            <div class="col-lg-2">
+                                <h4>Chọn Ảnh</h4>
+                            </div>
+                            <div class="col-lg-10 bothinputbtn">
+                                <input class="form-control inputImg" type="text" id="txtImage">
+                                <span><button type="submit" class=" btn-default buttonAddImg" id="btnSelectImage">Thêm Ảnh</button></span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 ">
+                            <div class="col-lg-2">
+                                <h4>Mức Độ</h4>
+                            </div>
+                            <div class="col-lg-10">
+                                <select class="form-control TypeHardQuestion" id="level-option">
+                                    <option value="0">Dễ</option>
+                                    <option value="1">Trung bình</option>
+                                    <option value="2">Khó</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 ">
+                            <div class="col-lg-2">
+                                <h4>Nội Dung</h4>
+                            </div>
+                            <div class="col-lg-10">
+                                @*<textarea rows="" cols="" class="form-control"></textarea>*@
+                                @Html.TextAreaFor(model => model.QuestionContent, new { htmlAttributes = new { @class = "form-control" }, id = "txtContent" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="col-lg-2">
+                                <h4>Trả lời</h4>
+                            </div>
+                            <table id="my-table">
+                                <div class="col-lg-10 AllAnswer">
+                                    <div class="Answer">
+                                        <input type="text" class="form-control" name="" id="" placeholder="A.Something">
+                                        <small id="helpId" class="form-text text-muted">
+                                            Câu trả lời đúng ? 
+                                            <input type="checkbox" name="NormalCheck" id="CheckRight" value="checkedValue">
+                                        </small>
+                                    </div>
+                                    <br>
+                                    <div class="Answer">
+                                        <input type="text" class="form-control" name="" id="" placeholder="B.Something">
+                                        <small id="helpId" class="form-text text-muted">
+                                            Câu trả lời đúng ?
+                                            <input type="checkbox" name="NormalCheck" id="CheckRight" value="checkedValue">
+                                        </small>
+                                    </div>
+
+                                </div>
+                                <div class=" col-lg-12 bothButton">
+                                    <div class="col-lg-4">
+                                        <a name="" id="AddQuestion" class="btn btn-primary" href="#" role="button">Thêm Answer</a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a name="" id="save" class="btn btn-danger" href="#" role="button">Thêm Question</a>
+                                    </div>
+                                </div>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!--Div end row -->
+        </div>
+    </form>
+</section>
+<link href="~/Asserts/Client/css/CreateQuestionByHand.css" rel="stylesheet" />
+<style>
+    .bothButton {
+        margin: 5% 0px 0px 30%;
+    }
+
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+
+    .dropdown {
+        margin-top: 0% !important;
+        margin-left: 5rem;
+    }
+
+    .showAlert {
+        margin-left: 15rem;
+    }
+</style>
+@section jsFooter{
+
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>*@
+    @*<script src="~/Asserts/Client/js/MakeQuestions.js"></script>*@
+    <script>
+
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('#AlertBox').hide('slow');
+            }, 5000);
+
+
+            // enabled CKFindner
+            $('#btnSelectImage').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('#txtImage').val(url)
+                };
+                finder.popup();
+            })
+
+            //----------------------------------
+            // eanable CKeditor
+            var editor = CKEDITOR.replace('txtContent', {
+                customConfig: '/Asserts/Client/js/plugins/ckeditor/config.js',
+                htmlEncodeOutput: true
+            })
+
+            $('#AddQuestion').click(function (e) {
+                e.preventDefault();
+                $('.AllAnswer').append('<div class="AnswerBonus Answer"><input type="text" class="form-control" name="" id=""><small id="helpId" class="form-text text-muted">Câu trả lời đúng ? <input type="checkbox" name="NormalCheck" id="CheckRight" value="checkedValue"></small></div>');
+                $('.AnswerBonus input').blur(function (e) {
+                    if ($(this).val() == '') {
+                        $(this).parent('.AnswerBonus').remove();
+                    }
+                });
+            });
+            //----------------------------------
+            // handle button Save pass data to controller
+            $('#save').click(function () {
+                var answerArray = [];
+                var editor_data = CKEDITOR.instances['txtContent'].getData();
+                var finder_data = $('#txtImage').val();
+                var category_id = $('#dllCategory').val()
+                var level_question = $('#level-option').val()
+
+
+                $(".Answer").each(function (i) {
+                    if ($(this).find('input[type="text"]').val() != "") {
+                        answerArray[i] = {
+                            answer: $(this).find('input[type="text"]').val(),
+                            isChecked: $(this).find('input[type="checkbox"]').prop('checked')
+                        }
+                        //answerArray[i]['answer'] = $(this).find('input[type="text"]').val();
+                        //answerArray[i]['id'] = $(this).find('input[type="checkbox"]:checked').val();
+                    }
+                });
+
+
+                //check input type=checkbox : isChecked?
+                var count = 0;
+                for (var i = 0; i < answerArray.length; i++) {
+                    if (answerArray[i]["isChecked"] == true) {
+                        count++;
+                    }
+                }
+                if (count == 0) {
+                    $('.showAlert').html('<div id="AlertBox" class="alert alert-warning">' + "Vui chọn câu trả lời đúng!" + ' </div>');
+                }
+                else {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Questions/Create',
+                        data: JSON.stringify({
+                            'answerArray': answerArray, 'editor_data': editor_data, 'finder_data': finder_data,
+                            'category_id': category_id, 'level_question': level_question
+                        }),
+                        traditional: true,
+                        contentType: 'application/json; charset=utf-8',
+                        datatype: 'json',
+                        success: function (questionID) {
+                            location.reload(true);
+                            //$('#AlertBox').delay(3600000).slideUp(1000);
+                        },
+                        error: function () {
+                            //location.reload(true);
+                            //$('#AlertBox').delay(3600000).slideUp(1000);
+                            alert('Failed ');
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+}
+

@@ -1,0 +1,341 @@
+﻿@model Model.EF.User
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <section class="teacher-profile">
+        <div class="container">
+            <div class="teacher-name">
+                <h3>Cập Nhật Thông Tin Cá Nhân</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-2 root">
+                    <div id="thongtinchung">
+                        <a>Thông tin chung</a>
+                    </div>
+
+                    <div id="changepassword">
+                        <a>Đổi Mật khẩu</a>
+                    </div>
+                </div>
+                <div id="info" class="col-md-10">
+                    <div class="profile-details">
+                        <div id="rowinput" class="row">
+                            <h4>Thông Tin Cá Nhân</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                @if (TempData["AlertMessage"] != null)
+                                {
+                                    <div id="AlertBox" class="alert @TempData["AlertType"]">
+                                        @TempData["AlertMessage"]
+                                        Bạn muốn <a href="/thong-tin-ca-nhan" class="alert-link">Tiếp tục </a>hay quay về <a href="/trang-chu" class="alert-link">Trang chủ</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div id="rowinput" class="row details-slide">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Tên tài khoản: </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @readonly = "readonly" })
+                                </div>
+                            </div>
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Email: </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    @Html.DisplayFor(model => model.Email)
+                                </div>
+                            </div>
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Họ và Tên: </label>
+                                </div>
+                                <div class="col-sm-6" id="fullname">
+                                    @Html.DisplayFor(model => model.FullName)
+                                </div>
+                            </div>
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Số Điện Thoại:</label>
+                                </div>
+                                <div class="col-sm-6" id="phone">
+                                    @Html.DisplayFor(model => model.PhoneNumber)
+                                </div>
+                            </div>
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Địa Chỉ:</label>
+                                </div>
+                                <div class="col-sm-8" id="address">
+                                    @Html.DisplayFor(model => model.Address)
+                                </div>
+                            </div>
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" id="change" class="btn btn-primary">Chỉnh sửa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="changeinfo" class="col-md-10">
+                    <div class="profile-details">
+                        <div id="rowinput" class="row">
+                            <div id="rowinput" class="row">
+                                <h4>Thông Tin Cá Nhân</h4>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="rowinput" class="row details-slide">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Tên tài khoản: </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @readonly = "readonly" })
+                                </div>
+                            </div>
+                            @*<div id="rowinput" class="row username_input">
+                                    <div class="col-sm-4">
+                                        <label for="my-input">Email: </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @id = "my-input", @class = "form-control ", @type = "text" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>*@
+
+                            <div id="rowinput" class="row fullname_input">
+                                <div class="col-sm-4 ">
+                                    <label for="my-input">Họ và Tên: </label>
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @id = "my-input", @class = "form-control  ", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div id="rowinput" class="row pass_input">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Mật Khẩu</label>
+                                </div>
+                                <div class="row col-md-6">
+
+                                    <input id="my-input" class="form-control oldpass" type="password" name="" placeholder="Nhập mật khẩu cũ">
+                                    <input id="my-input" class="form-control newpass" type="password" name="" placeholder="Nhập mật khẩu mới">
+                                    <p id="waring">Mật khẩu phải đủ 6 kí tự</p>
+                                    <input id="my-input" class="form-control renewpass" type="password" name="" placeholder="Nhập lại mật khẩu mới">
+                                    <p id="waring1">Nhập lại mật khẩu chưa đúng</p>
+                                </div>
+                            </div>
+
+                            <div id="rowinput" class="row phone_input">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Số Điện Thoại:</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @id = "my-input", @class = "form-control phoneN", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div id="rowinput" class="row address_input">
+                                <div class="col-sm-4">
+                                    <label for="my-input">Địa Chỉ:</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @id = "my-input", @class = "form-control ", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div id="rowinput" class="row">
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-8" id="btnupdate">
+                                    <button type="submit" id="updateinfo" class="btn btn-primary">Cập nhật</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+@section jsFooter{
+    <script type="text/javascript" src="~/Asserts/Client/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/jquery.form-validator.min.js"></script>
+    <script type='text/javascript'
+            src='https://maps.google.com/maps/api/js?key=AIzaSyAciPo9R0k3pzmKu6DKhGk6kipPnsTk5NU'></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/map-styleMain.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/placeholder.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/coustem.js"></script>
+    <script src="~/Asserts/Client/js/custom.js"></script>
+
+    <style>
+        #waring, #waring1 {
+            color: red;
+            margin-left: 10px;
+        }
+
+        .root a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        input:focus {
+            border: 1px solid grey !important;
+        }
+    </style>
+    <script>
+        $("#thongtinchung").css("font-weight", " bold");
+        $("#changeinfo").hide();
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#AlertBox').hide('slow');
+            }, 10000);
+            var check = $('.phoneN').val();
+            $(".phoneN").blur(function () {
+                if ($(".phoneN").val().length > 10 || $(".phoneN").val().length < 10) {
+                    alert('Số Điện thoại Bắt buộc phải 10 số')
+                    $('.phoneN').val(check);
+                }
+            });
+            //$("#update").click(function () {
+            //    $("#changeinfo").hide();
+            //    $("#info").show();
+
+
+            //    $("#changeinfo,.pass_input").hide();
+            //    $("#info, .fullname_input,.pass_input,.department_input,.phone_input,.address_input").show();
+            //    $("#thongtinchung").css("font-weight", " bold");
+            //    $("#changepassword").css("font-weight", " normal");
+            //});
+            $("#change").click(function () {
+                $("#info").hide();
+                $("#changeinfo").show();
+                $(".pass_input").hide();
+
+            });
+
+            $("#thongtinchung").click(function () {
+                $("#changeinfo,.pass_input").hide();
+                $("#info, .fullname_input,.pass_input,.department_input,.phone_input,.address_input").show();
+                $("#thongtinchung").css("font-weight", " bold");
+                $("#changepassword").css("font-weight", " normal");
+                $("#btnupdate").html('<button type="submit" id="updateinfo" class="btn btn-primary">Cập nhật</button>');
+
+            });
+            $("#changepassword").click(function () {
+                $("#changeinfo,.pass_input").show();
+                $("#info, .fullname_input,.department_input,.phone_input,.address_input").hide();
+                $("#thongtinchung").css("font-weight", " normal");
+                $("#changepassword").css("font-weight", " bold");
+                $("#btnupdate").html('<button id="update" class="btn btn-primary" disabled >Cập nhật mật khẩu</button>');
+
+
+                $(".oldpass").on("input", function () {
+                    var oldpass = $(".oldpass").val();
+                    var newpass = $(".newpass").val();
+                    var renewpass = $(".renewpass").val();
+
+                    if (oldpass == "" || newpass == "" || renewpass == "" || oldpass == newpass || newpass.length < 6) {
+                        if (oldpass == newpass) {
+                            $("#update").attr("disabled", true);
+                        }
+                    } else {
+                        if (newpass == renewpass) {
+                            $("#update").attr("disabled", false);
+                        } else {
+                            $("#update").attr("disabled", true);
+                        }
+                    }
+                })
+
+
+                $(".newpass,.renewpass").on("input", function () {
+                    var oldpass = $(".oldpass").val();
+                    var newpass = $(".newpass").val();
+                    var renewpass = $(".renewpass").val();
+                    if (oldpass == newpass) {
+                        $("#update").attr("disabled", true);
+                    }
+                    else {
+                        if (renewpass == newpass) {
+                            if (renewpass != "" && oldpass != "" && renewpass != "" && newpass.length > 5) {
+                                $("#update").attr("disabled", false);
+                            }
+                            $('#waring1').hide();
+                        } else {
+                            $('#waring1').show();
+                            $("#update").attr("disabled", true);
+                        }
+
+                    }
+                })
+                $('#waring,#waring1').hide();
+                $(".newpass").blur(function () {
+                    var newpass = $(".newpass").val();
+                    if (newpass.length < 6) {
+                        $('#waring').show();
+                    } else {
+                        $('#waring').hide();
+                    }
+                });
+
+                $("#update").click(function () {
+                    var oldpass = $(".oldpass").val();
+                    var newpass = $(".newpass").val();
+                    var renewpass = $(".renewpass").val();
+                    if (oldpass != "" && newpass != "" && renewpass != "") {
+                        if (newpass == renewpass && oldpass != newpass) {
+                            $.ajax({
+                                type: 'POST',
+                                url: '/UpdateUser/UpdatePass',
+                                data: JSON.stringify({ 'oldpass': oldpass, 'newpass': newpass }),
+                                traditional: true,
+                                contentType: 'application/json; charset=utf-8',
+                                datatype: 'json',
+                                success: function (newpass) {
+                                    location.reload(true);
+
+                                },
+                                error: function () {
+                                    location.reload(true);
+                                    //alert('Đổi mật khẩu thất bại, kiểm tra lại mật khẩu cũ. ');
+                                }
+                            });
+                        }
+                        else if (newpass != renewpass) {
+                            alert('Mật khẩu mới chưa trùng khớp');
+                        }
+                        else if (old == newpass) {
+                            alert('Mật khẩu mới không được trùng với mật khẩu cũ!');
+                        }
+                    }
+                    else {
+                        alert("Không được để trống !!");
+                    }
+                })
+
+            });
+
+
+        });
+    </script>
+
+}

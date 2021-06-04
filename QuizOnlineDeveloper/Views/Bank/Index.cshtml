@@ -1,0 +1,535 @@
+﻿@model  List<Model.Services.CategoryRequest>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- partial:index.partial.html -->
+<style>
+    .tree {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10+ and Edge */
+        user-select: none; /* Standard syntax */
+        font-size: 18px;
+        padding: 3rem 0 0 5rem;
+    }
+
+        .tree li {
+            list-style: none;
+            cursor: default;
+        }
+
+    .toggler {
+        cursor: default;
+        font-size: 0.8em;
+        text-align: center;
+        margin-left: -1.4em;
+        margin-right: 0.6em;
+        border: 0.1em solid transparent;
+        border-radius: 50%;
+        transition: border 0.5s;
+    }
+
+    li.tree-opened > .toggler:hover,
+    li.tree-closed > .toggler:hover {
+        border-color: grey;
+        cursor: pointer;
+    }
+
+    li.tree-empty > .toggler {
+        color: #aaa;
+    }
+
+    li.tree-empty > span.toggler:before {
+        content: "\2212";
+    }
+
+    li.tree-closed > span.toggler:before {
+        content: "+";
+    }
+
+    li.tree-opened > span.toggler:before {
+        content: "\2212";
+    }
+
+    .tree {
+        color: #00b389;
+        padding-bottom: 20%;
+    }
+
+        .tree li, .tree li > a, .tree li > span {
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+            .tree li a {
+                cursor: default;
+                color: #00b389;
+                text-decoration: none;
+                line-height: 20pt;
+                border-radius: 4px;
+                transition: color 0.3s, background-color 0.3s;
+            }
+
+                .tree li a:hover {
+                    background-color: #00b389;
+                    color: #fff;
+                }
+
+    table caption {
+        padding: .5em 0;
+    }
+
+    table.dataTable th,
+    table.dataTable td {
+        white-space: nowrap;
+    }
+
+
+    #myModal {
+        width: 60%;
+        /*height:70rem;*/
+        margin: 0 auto !important;
+    }
+
+    .modal-body label {
+        margin-top: 2% !important;
+    }
+
+    .valueinput {
+        margin-bottom: 1rem;
+    }
+
+    .modal-dialog {
+        overflow-y: initial !important
+    }
+
+    .modal-body {
+        height: 50rem;
+        overflow-y: auto;
+        text-align: center !important;
+        margin-left: -8%;
+    }
+
+    #noidungcauhoi {
+        height: 1% !important;
+    }
+
+    .row {
+        margin-bottom: 1rem;
+    }
+
+    .addAnswer, .savequestion {
+        padding: 0.5% 2% 0.5% 2% !important;
+        /*      border-radius: 10px !important;*/
+        margin-bottom: 1rem !important;
+    }
+
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+</style>
+<section class="banner inner-page">
+    <div class="banner-img"><img src="https://cdn.hipwallpaper.com/i/77/57/P36qCZ.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Danh sách Ngân hàng đề</h1>
+            <div id="countdown"></div>
+        </div>
+    </div>
+</section>
+<section class="breadcrumb ">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bank</a></li>
+        </ul>
+    </div>
+</section>
+<div class="row" style="width:100%">
+    <div class="col-lg-3">
+        @{
+            long GetCategoryByName(long userid, string typename)
+            {
+                using (Model.EF.DBCONTENT db = new Model.EF.DBCONTENT())
+                {
+                    var cate = (from x in db.Categories
+                                join o in db.User_Categories
+                                on x.CategoryID equals o.CategoryID
+                                where x.Typename == typename && o.UserID == userid
+                                select x.CategoryID
+                               ).SingleOrDefault();
+                    return cate;
+                }
+            }
+            string GenTreeViewHtml(List<Model.Services.CategoryRequest> nodes, int check)
+            {
+                var sess = (Model.Common.UserLogin)Session[new Model.Common.CommonConstant().USER_SESSION];
+                if (nodes == null || nodes.Count == 0) return string.Empty;
+                System.Text.StringBuilder builder = new System.Text.StringBuilder();
+                if (check == 0)
+                {
+                    builder.Append("<ul class=" + '"' + "tree" + '"' + '>');
+                    check++;
+                }
+                else
+                {
+                    builder.Append("<ul class=" + '"' + "node" + '"' + '>');
+                }
+                foreach (var node in nodes)
+                {
+                    long cateID = GetCategoryByName(sess.UserID, node.categoryName);
+                    builder.Append("<li>");
+                    if (node.categoryId == null)
+                        builder.Append($"<a class='atreeivew' data-id='{node.categoryName}' data-toggle='tooltip' data-placement='right' title= 'Mã Topic #{cateID}'>{node.categoryName}</a>");
+                    else
+                        builder.Append($"<a class='atreeivew' data-id='{node.categoryName}' data-toggle='tooltip' data-placement='right'>{node.categoryName}</a>");
+                    builder.Append(GenTreeViewHtml(node.childrens, check));
+                    builder.Append("</li>");
+                }
+                builder.Append("</ul>");
+
+
+
+                return builder.ToString();
+            }
+        }
+
+        @Html.Raw(GenTreeViewHtml(Model, 0))
+    </div>
+    <div class="col-lg-8" style="width: 63%; padding-top: 3rem">
+        <table id="my-table" class="table table-bordered table-hover dt-responsive" style="background-color: white">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Nội dung câu hỏi</th>
+                    <th scope="col">Độ Khó</th>
+                    <th scope="col">Ngày tạo</th>
+                    <th scope="col">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody class="tbody1">
+            </tbody>
+        </table>
+    </div>
+</div>
+@*Model Edit*@
+<div>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog" style="overflow-y: scroll" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title text-center" id="exampleModalLongTitle">Update Câu Hỏi</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="row col-lg-12">
+                            <div class="col-lg-4 text-right">
+                                <label for="my-input">Độ Khó</label>
+                            </div>
+                            <div class="col-lg-3">
+                                <select class="form-control" name="" id="stateChoose">
+                                    <option value="0">Dễ</option>
+                                    <option value="1">Trung Bình</option>
+                                    <option value="2">Khó</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row col-lg-12">
+                            <div class="col-lg-4 text-right">
+                                <label for="my-input">Môn</label>
+                            </div>
+                            <div class="col-lg-3">
+                                @Html.DropDownList("CategoryID", new SelectList(ViewBag.quizTest, "CategoryID", "Typename"), new { @class = "form-control text-right InputBank", id = "dllCategory" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row col-lg-12">
+                            <div class="col-lg-4 text-right">
+                                <label for="my-input">Ảnh</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <input class="form-control inputImg" type="text" id="txtImage">
+                            </div>
+                            <div class="col-lg-2">
+                                <span><button type="submit" class="btn btn-sm btn-danger buttonAddImg" id="btnSelectImage">Thêm Ảnh</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row col-lg-12">
+                            <div class="col-lg-4 text-right">
+                                <label for="my-input">Nội dung Câu Hỏi</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <textarea class="form-control" id="noidungcauhoi" name="long" rows="1"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row col-lg-12 rowanswer">
+                            <div class="col-lg-4 text-right">
+                                <label for="my-input">Nội dung Câu Trả Lời</label>
+                            </div>
+                            <div class="Answer col-lg-8"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary addAnswer">Thêm Câu Trả Lời</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary savequesans">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section jsFooter{
+
+    <link href="~/Asserts/Client/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Asserts/Admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Asserts/Admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/Asserts/Client/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            //$("#my-table").DataTable({
+            //    "responsive": true,
+            //    "autoWidth": false,
+            //    "paging": true,
+            //    "ordering": true,
+            //    "searching": true,
+
+            //})
+
+            // enabled CKFindner
+            $('#btnSelectImage').on('click', function (e) {
+                e.preventDefault();
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (url) {
+                    $('#txtImage').val(url)
+                };
+                finder.popup();
+            })
+
+            //----------------------------------
+            // eanable CKeditor
+            var editor = CKEDITOR.replace('noidungcauhoi', {
+                customConfig: '/Asserts/Client/js/plugins/ckeditor/config.js',
+                htmlEncodeOutput: true,
+                width: "600px",
+                height: "100px"
+            });
+            $(".atreeivew").click(function (e) {
+                e.preventDefault()
+                var name = $(this).attr("data-id");
+                function ToJavaScriptDate(value) {
+                    var pattern = /Date\(([^)]+)\)/;
+                    var results = pattern.exec(value);
+                    var dt = new Date(parseFloat(results[1]));
+                    return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
+                }
+                $.ajax({
+                    type: 'GET',
+                    url: '/Bank/Question',
+                    data: ({ "typename": name }),
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'JSON',
+                    success: function (ques) {
+                        var html = ''; var stt = 0;
+                        $.each(ques, function (key, item) {
+                            html += '<tr>';
+                            html += '<td>' + (++stt) + '</td>';
+                            html += '<td>' + item.Typename + '</td>';
+                            html += '<td>' + item.QuestionContent + '</td>';
+                            switch (item.LevelQuestion) {
+                                case 0: {
+                                    html += '<td>Dễ</td>';
+                                    break;
+                                }
+                                case 1: {
+                                    html += '<td>Trung bình</td>';
+                                    break;
+                                }
+                                case 2: {
+                                    html += '<td>Khó</td>';
+                                    break;
+                                }
+                            }
+                            if (item.CreateAt != null) {
+                                html += '<td>' + ToJavaScriptDate(item.CreateAt) + '</td>';
+                            }
+                            else {
+                                html += '<td></td>';
+                            }
+                            html += '<td><div class="col-lg-2"><i data-id=' + item.QuestionID + ' class="fa fa-edit iconedit"></i></div></td>';
+                            html += '</tr>';
+                        });
+                        $('.tbody1').html(html);
+
+                        ///Edit question
+                        var arranscontent = [];
+                        var arransistrue = [];
+                        $(".iconedit").click(function () {
+                            var quesID = $(this).attr("data-id");
+                            editor.resize('100%', '100');
+                            $(".Answer").html("");
+                            $.ajax({
+                                type: 'GET',
+                                url: '/Bank/GetQuestion',
+                                data: ({ "quesID": quesID }),
+                                contentType: 'application/json; charset=utf-8',
+                                datatype: 'JSON',
+                                success: function (question) {
+                                    var contentQuestion = $("#noidungcauhoi").val(question.QuestionContent);
+                                    CKEDITOR.instances['noidungcauhoi'].setData(contentQuestion);
+                                    $('#txtImage').val(question.Image);
+                                    $('#stateChoose').val(question.LevelQuestion);
+                                    $('#dllCategory').val(question.CategoryID);
+                                    $.each(question.listAnsw, function (key, item) {
+                                        var checktrue = '';
+                                        var checkfalse = '';
+                                        if (item.IsTrue == true) {
+                                            checktrue = 'selected';
+                                        }
+                                        else {
+                                            checkfalse = 'selected';
+                                        }
+                                        $(".Answer").append('<div class="inputAnswer"><div class="col-lg-8"><input type="text" name="" id="' + item.AnswerID + '" class="form-control valueinput" placeholder=""></div><div class="col-lg-2"><select name="" id="truefalse"><option value="false"' + checkfalse + '>false</option><option value="true" ' + checktrue + '>true</option></select></div><div class="col-lg-1 delete"><i class=" fa fa-trash fa-2x"></i></div></div>');
+
+                                        $('#' + item.AnswerID).val(item.AnswerContent);
+                                        $(".delete").click(function (e) {
+                                            e.preventDefault();
+                                            $(this).parent().remove();
+                                        });
+                                    });
+                                    $("#myModal").modal('show');
+
+                                },
+                                error: function () {
+                                    alert('Failed ');
+                                }
+                            });
+                            $('.savequesans').click(function () {
+                                var contentQuestion = $("#noidungcauhoi").val();
+                                var questioncontent = CKEDITOR.instances['noidungcauhoi'].getData();
+                                //var questioncontent = $("#noidungcauhoi").getData();
+                                var dokho = $('#stateChoose').val();
+                                var hocphan = $('#dllCategory').val();
+                                var image = $('#txtImage').val();
+                                console.log(image);
+                                $('.inputAnswer').each(function () {
+                                    arranscontent.push($(this).find('.valueinput').val());
+                                    arransistrue.push($(this).find('#truefalse option:selected').text());
+                                })
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '/Bank/Edit',
+                                    data: JSON.stringify(
+                                        {
+                                            'questionID': quesID,
+                                            'questioncontent': questioncontent,
+                                            'dokho': dokho,
+                                            'hocphan': hocphan,
+                                            'answercontent': arranscontent,
+                                            'Istrue': arransistrue,
+                                            'image': image
+                                        }),
+                                    traditional: true,
+                                    contentType: 'application/json; charset=utf-8',
+                                    datatype: 'json',
+                                    success: function () {
+                                        alert("False");
+                                    },
+                                    error: function () {
+                                        location.reload(true);
+                                    }
+                                });
+                            })
+                        });
+                    },
+                    error: function () {
+                        alert('Failed ');
+                    }
+                });
+
+            });
+
+            $.fn.openActive = function (activeSel) {
+                activeSel = activeSel || ".active";
+
+                var c = this.attr("class");
+
+                this.find(activeSel).each(function () {
+                    var el = $(this).parent();
+                    while (el.attr("class") !== c) {
+                        if (el.prop("tagName") === 'UL') {
+                            el.show();
+                        } else if (el.prop("tagName") === 'LI') {
+                            el.removeClass('tree-closed');
+                            el.addClass("tree-opened");
+                        }
+
+                        el = el.parent();
+                    }
+                });
+                return this;
+            }
+            $.fn.treemenu = function (options) {
+                options = options || {};
+                options.delay = options.delay || 0;
+                options.openActive = options.openActive || false;
+                options.activeSelector = options.activeSelector || "";
+
+                this.find("> li").each(function () {
+                    e = $(this);
+                    var subtree = e.find('> ul');
+                    var toggler = $('<span>');
+                    toggler.addClass('toggler');
+
+                    e.prepend(toggler);
+                    if (subtree.length > 0) {
+                        subtree.hide();
+
+                        e.addClass('tree-closed');
+
+                        e.find(toggler).click(function () {
+                            var li = $(this).parent('li');
+                            li.find('> ul').toggle(options.delay);
+                            li.toggleClass('tree-opened');
+                            li.toggleClass('tree-closed');
+                        });
+
+                        $(this).find('> ul').treemenu(options);
+                    } else {
+                        $(this).addClass('tree-empty');
+                    }
+                });
+
+                if (options.openActive) {
+                    this.openActive(options.activeSelector);
+                }
+
+                return this;
+            }
+            $(".tree").treemenu({ delay: 150 }).openActive();
+            $('.addAnswer').click(function (e) {
+                e.preventDefault();
+                $(".Answer").append('<div class="inputAnswer"><div class="col-lg-8"><input type="text" name="" id="" class="form-control valueinput" placeholder=""></div><div class="col-lg-2"><select name="" id="truefalse"><option value="">false</option><option value="">true</option></select></div><div class="col-lg-1 delete"><i class=" fa fa-trash fa-2x"></i></div></div>');
+                $(".delete").click(function (e) {
+                    e.preventDefault();
+                    $(this).parent().remove();
+                });
+            })
+        })
+    </script>
+
+}

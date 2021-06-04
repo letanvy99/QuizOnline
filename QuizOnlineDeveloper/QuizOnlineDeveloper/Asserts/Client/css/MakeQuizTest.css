@@ -1,0 +1,61 @@
+.cart-table th.FromBank {
+    text-align: left!important;
+}
+
+.InputName,
+.InputBank,
+.RandomThi {
+    width: 80%;
+    margin-left: 2%;
+}
+
+.InputName {
+    border: none !important;
+    border-bottom: rgb(2, 137, 179) 3px solid !important;
+    transition: border 0.5s;
+}
+
+.InputName:focus {
+    box-shadow: none;
+    border-bottom: rgb(182, 0, 0) 3px solid !important;
+}
+
+.InputName:hover {
+    cursor: pointer;
+}
+
+#countdown {
+    width: 19%;
+    margin: 2% auto 0% auto !important;
+}
+
+.fa-undo:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.Sday,
+.Eday,
+.addKey,
+.addTime {
+    cursor: pointer;
+    user-select: none;
+    padding: 7% 0% 7% 5% !important;
+    border: 0.1px grey double !important;
+}
+
+.table-view {
+    margin-bottom: 3%;
+}
+
+.CreateBtn {
+    margin-top: 4%;
+}
+
+.CreateBtn .btn {
+    padding-bottom: 3%;
+}
+
+#NoCheck {
+    margin-left: 50px;
+}

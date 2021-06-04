@@ -1,0 +1,220 @@
+﻿html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+p, label {
+    font-size: 14px;
+}
+
+#my-box {
+    max-height: 62vh;
+    background-color: #ffffff;
+    border: 1px solid #a28089;
+}
+
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #a28089;
+}
+
+#my-question {
+    position: relative;
+}
+
+.row-list {
+    margin-top: -1rem;
+    overflow: scroll;
+    max-height: 26rem;
+    cursor: pointer;
+}
+
+.fas.fa-ellipsis-v {
+    font-size: 10px;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+ 
+} */
+
+::-webkit-scrollbar {
+    width: 0.1em;
+    height: 0.1em
+}
+
+.btn-question {
+    border-radius: 4px;
+    border: none;
+    margin-left: 1.1rem;
+    margin-top: 0.8rem;
+    background-color: #ffffff;
+    width: 34px;
+    outline: none;
+    border: 1px solid #45a1bd;
+}
+
+.btn-question-done {
+    border-radius: 4px;
+    border: none;
+    margin-left: 1.1rem;
+    margin-top: 0.8rem;
+    background-color: #ffffff;
+    width: 34px;
+    outline: none;
+    border: 1px solid red;
+}
+
+.btn-question > button {
+    padding-top: 1rem;
+}
+
+.btn-question:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 36vh;
+    height: 62vh !important;
+    margin-top: 2rem;
+}
+
+#row-list {
+    margin-left: -1.3rem;
+}
+
+.sticky1 {
+    margin-left: 38vh;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container .dong-ho-dem-nguoc p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sticky1 {
+        margin-left: 27vh;
+    }
+
+    .container .dong-ho-dem-nguoc p {
+        font-size: 12px;
+        margin-left: -0.66rem;
+    }
+
+    #hourRemaining {
+        padding: 5px;
+    }
+
+    #minRemaining {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #secRemaining {
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sticky1 {
+        margin-left: 22.7vh;
+    }
+
+
+    .container .dong-ho-dem-nguoc {
+        margin-left: -10px !important;
+        position: absolute;
+    }
+
+    .row-list {
+        margin-top: 2rem;
+    }
+
+    .container .dong-ho-dem-nguoc p {
+        font-size: 12px;
+        margin-left: -0.6rem;
+    }
+
+    #hourRemaining {
+        padding: 5px;
+    }
+
+    #minRemaining {
+        padding: 5px;
+    }
+
+    #secRemaining {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .sticky1 {
+        margin-left: 20.7vh;
+    }
+
+    .container .dong-ho-dem-nguoc {
+        margin-left: -15px !important;
+    }
+
+        .container .dong-ho-dem-nguoc p {
+            font-size: 12px;
+        }
+}
+
+@media screen and (max-width: 610px) {
+    .sticky1 {
+        margin-left: 18.7vh;
+    }
+
+    .container .dong-ho-dem-nguoc {
+        margin-left: -20px !important;
+    }
+
+        .container .dong-ho-dem-nguoc p {
+            font-size: 12px;
+        }
+}
+
+@media screen and (max-width: 400px) {
+    .sticky1 {
+        margin-left: 13.7vh;
+    }
+
+    .container .dong-ho-dem-nguoc {
+        margin-left: -12px !important;
+    }
+
+        .container .dong-ho-dem-nguoc p {
+            font-size: 9px;
+        }
+
+    #hourRemaining {
+        padding: 3px;
+    }
+
+    #minRemaining {
+        padding: 3px;
+    }
+
+    #secRemaining {
+        padding: 3px;
+    }
+
+    .sticky {
+        margin-left: 0.8rem;
+    }
+}

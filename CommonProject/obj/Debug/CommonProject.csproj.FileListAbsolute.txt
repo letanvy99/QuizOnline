@@ -1,0 +1,23 @@
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csprojAssemblyReference.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csproj.CoreCompileInputs.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csprojAssemblyReference.cache
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csprojAssemblyReference.cache
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\bin\Debug\CommonProject.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\CommonProject\obj\Debug\CommonProject.pdb

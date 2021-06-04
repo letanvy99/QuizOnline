@@ -1,0 +1,113 @@
+﻿@model List<Model.EF.Class>
+
+
+
+@{ ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+<link rel="stylesheet" href="~/Asserts/Client/css/dropdown-menu-dashboard-user.css">
+<link href="~/Asserts/Client/css/courselist.css" rel="stylesheet" />
+<section class="courses-view">
+    <div class="container">
+        <div class="filter-row">
+            <div class="view-type">
+                <a href="khoa-hoc-cua-toi" class="active"><i class="fa fa-th-large"></i></a>
+                <a href="khoa-hoc"><i class="fa fa-list"></i></a>
+            </div>
+            <div class="search">
+                <input id="myInput" type="text" placeholder="Search">
+                <input type="submit" value="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="text-center">Danh Sách Khóa Học Của Tôi</h2>
+        <br>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+<div class="col-sm-6 col-md-3">
+    <div class="course-post">
+        <div class="img">
+            <img src="~/Asserts/Client/images/courses/courses-img5.jpg" alt="">
+            <div class="icon">
+                <a href="khoa-hoc/khoa-hoc-@item.ClassName-@item.ClassID">
+                    <img src="@Url.Content("~/Asserts/Client/images/book-icon.png")" , alt="Edit" />
+                </a>
+            </div>
+        </div>
+        <div class="info text-center">
+            <div class="name" style="font-size:25px"> @Html.DisplayFor(modelItem => item.ClassName)</div>
+            <div class="expert">
+                <span>By </span>
+                @{ var createby = item.CreateBy;
+                    var name = new Model.Dao.UserDao().GetName((long)createby); }
+                @name
+            </div>
+        </div>
+        <div class="product-footer">
+            <div class="comment-box">
+                <div class="box">
+                    <i class="fa fa-users"></i>
+                    @{ var classidcount = item.ClassID;
+                        var count = new Model.Dao.ClassUserDao().countClassUser(classidcount); }
+                    @count
+                    học viên
+                </div>
+            </div>
+            <div class="rating">
+                <div class="fill" style="width:45%"></div>
+            </div>
+            <div class="view-btn">
+                <a class="btn" href="khoa-hoc/khoa-hoc-@item.ClassName-@item.ClassID/chinh-sua">Chỉnh sửa</a>
+                @*@Html.ActionLink("Chỉnh sửa", "Edit", new { classId = item.ClassID }, new { @class = "btn" })*@
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>      }
+        </div>
+        <div class="pagination" id="pagination-container">
+
+
+
+        </div>
+
+
+
+    </div>
+</section>
+</div>
+@section jsFooter{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+    <script>
+        var item = $('.course-post');
+        var numItem = item.length;
+        console.log(numItem);
+        var perPage = 4;
+        item.slice(perPage).hide();
+        $('#pagination-container').pagination({
+            items: numItem,
+            itemsOnPage: perPage,
+            useAnchors: true,
+            prevText: "<",
+            nextText: ">",
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                item.hide().slice(showFrom, showTo).show();
+            }
+        })
+    </script>
+    <script>
+
+
+
+    </script>
+    <!-- page script -->
+}

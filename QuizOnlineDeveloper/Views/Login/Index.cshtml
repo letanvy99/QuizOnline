@@ -1,0 +1,64 @@
+﻿@model Model.ModelCustom.UserLoginCustom
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Asserts/Client/css/login.css">
+<style>
+    :focus {
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+</style>
+<section class="login-view">
+    <div class="container-login-view">
+        <div class="img">
+            <img src="~/Asserts/Client/images/gallery-img/undraw_personalization_triu.svg" alt="">
+        </div>
+        <div class="login-container">
+
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                @Html.ValidationSummary(false, "", "error")
+                @Html.HiddenFor(model=>model.returnUrl)
+                <div class="text-center">
+                    <img class="avatar"
+                         src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+                         alt="">
+                    <h2>Đăng Nhập</h2>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user" style="color: #30c5f0;"></i>
+                    </div>
+                    <div>
+                        <h5>Username</h5>
+                        @Html.TextBoxFor(model => model.UserName, new { placeHolder = "Tên đăng nhập", @class = "input" })
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-lock" style="color:#30c5f0;"></i>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        @Html.PasswordFor(model => model.Password, new { placeHolder = "Mật khẩu", @class = "input", value = Model.Password })
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        @Html.CheckBoxFor(model => model.RememberMe) <span style="color:#999;font-size:1.5rem">Nhớ Mật Khẩu</span>
+                    </div>
+
+                    <div class="col-lg-6">
+                        @Html.ActionLink("Quên mật khẩu", "ResetPassword", "Login")
+                    </div>
+                </div>
+                <button type="submit" class="btn">Đăng nhập</button>
+            }
+        </div>
+    </div>
+</section>
+

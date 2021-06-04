@@ -1,0 +1,280 @@
+﻿
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Slidebar{
+    @RenderPage("/Views/Shared/Slidebar.cshtml")
+}
+<section class="our-course">
+    <div class="container">
+        <div class="section-title">
+            <h1 style="color:#02cbf7">Kiểm Tra Thử</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="course-box">
+                    <div class="img">
+                        <img src="~/Asserts/Client/images/courses/courses-img1.jpg" alt="">
+                        <div class="course-info">
+                            <div class="date"><i class="fa fa-calendar"></i>20-10-2020</div>
+                            <div class="date"><i class="fa fa-clock-o"></i>20 phút</div>
+                            <div class="favorite"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                        </div>
+                        <div class="price free">Free</div>
+                    </div>
+                    <div class="course-name">Tiếng Anh<span><em>người tạo : </em>Tấn Vỹ</span></div>
+                    <div class="comment-row">
+                        <div class="rating">
+                            <div class="fill" style="width:45%"></div>
+                        </div>
+                        <div class="box"><i class="fa fa-users"></i>100 lượt truy cập</div>
+                        <div class="enroll-btn">
+                            <a href="#" class="btn">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="course-box">
+                    <div class="img">
+                        <img src="~/Asserts/Client/images/courses/courses-img2.jpg" alt="">
+                        <div class="course-info">
+                            <div class="date"><i class="fa fa-calendar"></i>20-12-2019</div>
+                            <div class="date"><i class="fa fa-clock-o"></i>15 phút</div>
+                            <div class="favorite"><a href="#"><i class="fa fa-heart"></i></a></div>
+                        </div>
+                        <div class="price free">free</div>
+                    </div>
+                    <div class="course-name">Toán Học<span><em>người tạo : </em>Văn Đạt</span></div>
+                    <div class="comment-row">
+                        <div class="rating">
+                            <div class="fill" style="width:45%"></div>
+                        </div>
+                        <div class="box"><i class="fa fa-users"></i>30 lượt truy cập</div>
+                        <div class="enroll-btn">
+                            <a href="#" class="btn">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="course-box">
+                    <div class="img">
+                        <img src="~/Asserts/Client/images/courses/courses-img3.jpg" alt="">
+                        <div class="course-info">
+                            <div class="date"><i class="fa fa-calendar"></i>10-02-2020</div>
+                            <div class="date"><i class="fa fa-clock-o"></i>20 phút </div>
+                            <div class="favorite"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                        </div>
+                        <div class="price free">Free</div>
+                    </div>
+                    <div class="course-name">Toán IQ<span><em>người tạo : </em>Văn Long</span></div>
+                    <div class="comment-row">
+                        <div class="rating">
+                            <div class="fill" style="width:45%"></div>
+                        </div>
+                        <div class="box"><i class="fa fa-users"></i>40 lượt truy cập</div>
+                        <div class="enroll-btn">
+                            <a href="#" class="btn">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="preparation">
+    <div class="container">
+        <div class="section-title white">
+            <h2>Lí do bạn chọn chúng tôi ?</h2>
+            <p>Nếu mọi người làm được mình phải làm được.<br>Nếu chưa ai làm được.Mình sẽ là người đầu tiên.</p>
+        </div>
+        <div class="preparation-view">
+            <div class="item">
+                <div class="icon"><img src="~/Asserts/Client/images/preparation-icon1.png" alt=""></div>
+                <div class="course-name">Dễ dàng tạo bài kiểm tra</div>
+                <p>
+                    Bất cứ bạn là ai, bất cứ bạn ở nơi đâu và bất cứ thời gian nào bạn cũng có thể tạo bài kiểm
+                    tra trên website của chúng tôi.
+                    Giao diện trực quang, đơn giản, bất kì mọi lứa tuổi.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><img src="~/Asserts/Client/images/preparation-icon2.png" alt=""></div>
+                <div class="course-name">Chấm điểm nhanh chóng</div>
+                <p>
+                    Sau khi hoàn thành bài kiểm tra bạn sẽ biết kết quả bài thi của bạn nhanh chóng chỉ sau vài
+                    giây.
+
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><img src="~/Asserts/Client/images/preparation-icon1.png" alt=""></div>
+                <div class="course-name">Xem lại các đáp án</div>
+                <p>
+                    Học viên có thể dễ dàng xem lại đáp án của đề thi với kết quả chính xác và tính minh bạch
+                    cao.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><img src="~/Asserts/Client/images/preparation-icon2.png" alt=""></div>
+                <div class="course-name">Hệ thống xếp hạng</div>
+                <p>Hệ thống sẽ xếp hạng theo điểm số và thời gian làm bài môt cách chính xác và nhanh chóng.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="student-feedback">
+    <div class="container">
+        <div class="section-title">
+            <h2>Người dùng nói gì</h2>
+        </div>
+        <div class="feedback-slider">
+            <div class="item">
+                <div class="student-img"><img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/38519139_2157107457896554_7075678283349622784_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=PMKGGpg5zbYAX_UvU0s&_nc_ht=scontent.fdad2-1.fna&oh=9e3ed20a679c77df8820710b6869ec44&oe=5F8237E0" alt=""></div>
+                <div class="student-name">Lê Tấn Vỹ</div>
+                <div class="student-designation">Kĩ Sư Công Nghệ Phần Mềm</div>
+                <p>
+                    <i class="fa fa-quote-left"></i> Khi mệt mỏi hãy bước chậm lại chứ đừng dừng lại. Hãy chăm
+                    chỉ trong yên lặng.
+                    Cảm ơn các bạn đã cho tôi những trải nghiệm thật tuyệt vời !<i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="item">
+                <div class="student-img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/83217341_2485305301757128_833894172833349632_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=JIebvHddS30AX8BOXAQ&_nc_ht=scontent.fdad1-1.fna&oh=ff76f019727f20a48854775393adfd00&oe=5F828C7B" alt=""></div>
+                <div class="student-name">Trần Quốc Việt</div>
+                <div class="student-designation">Kĩ Sư Công Nghệ Phần Mềm</div>
+                <p>
+                    <i class="fa fa-quote-left"></i> Chúng ta sẽ trở thành những gì mà chúng lặp đi lặp lại. Sự
+                    xuất sắc, không phải là kết quả của một hành động, mà là của một thoái quen.Cảm ơn website
+                    đã đem lại cho tôi nhiều điều tuyệt vời. Có cơ hội thực hành nhiều hơn thay vì học lí thuyết
+                    suôn!<i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="item">
+                <div class="student-img"><img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/81033791_1506772692814136_5490219491470082048_o.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_ohc=jVdvcChDamIAX_LseW0&_nc_ht=scontent.fdad2-1.fna&oh=4f86a834cb58434c439f04c763372687&oe=5F8239DF" alt=""></div>
+                <div class="student-name">Lê Văn Đạt</div>
+                <div class="student-designation">Kĩ Sư Công Nghệ Phần Mềm</div>
+                <p>
+                    <i class="fa fa-quote-left"></i>Cần cù thì bù siêng năng. CŨng nhờ website này mà tôi đã tạo
+                    ra
+                    được nhưng bài kiểm tra chất lượng dành cho học sinh của tôi. Tôi cảm ơn các bạn !<i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="item">
+                <div class="student-img"><img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/44257922_2213298948944071_3403657055460917248_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=0LhCwNq32X8AX-FGYbv&_nc_ht=scontent.fdad2-1.fna&oh=694fcb6c241a549ae51db7c26016afe2&oe=5F802E8E" alt=""></div>
+                <div class="student-name">Nguyễn Văn Vinh Quang</div>
+                <div class="student-designation">Kĩ Sư Công Nghệ Phần Mềm</div>
+                <p>
+                    <i class="fa fa-quote-left"></i>Cần cù thì bù siêng năng. CŨng nhờ website này mà tôi đã tạo
+                    ra
+                    được nhưng bài kiểm tra chất lượng dành cho học sinh của tôi. Tôi cảm ơn các bạn !<i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="item">
+                <div class="student-img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/19430105_247193659113179_8111665078107089552_n.jpg?_nc_cat=102&_nc_sid=174925&_nc_ohc=N_hOjzB9rGQAX8OVti9&_nc_ht=scontent.fdad1-1.fna&oh=3d02c32272251adac7419b850945f353&oe=5F814C4F" alt=""></div>
+                <div class="student-name">Trần Văn Long</div>
+                <div class="student-designation">Kĩ Sư Công Nghệ Phần Mềm</div>
+                <p>
+                    <i class="fa fa-quote-left"></i>Cần cù thì bù siêng năng. CŨng nhờ website này mà tôi đã tạo
+                    ra
+                    được nhưng bài kiểm tra chất lượng dành cho học sinh của tôi. Tôi cảm ơn các bạn !<i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+        </div>
+        <div class="more-stories">
+            <a href="#" class="btn">Những đánh giá khác</a>
+        </div>
+    </div>
+</section>
+<section class="our-team">
+    <div class="section-title">
+        <h2>Thành Viên</h2>
+    </div>
+    <div class="member-slider">
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="~/Asserts/Client/images/team-member/tanvy.jpg" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng."</p>
+                <div class="member-name">Lê Tấn Vỹ<span>Coder Hương An</span></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/83217341_2485305301757128_833894172833349632_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=JIebvHddS30AX8BOXAQ&_nc_ht=scontent.fdad1-1.fna&oh=ff76f019727f20a48854775393adfd00&oe=5F828C7B" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng."</p>
+                <div class="member-name">Trần Quốc Việt<span>Coder Đà Nẵng</span></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/19430105_247193659113179_8111665078107089552_n.jpg?_nc_cat=102&_nc_sid=174925&_nc_ohc=N_hOjzB9rGQAX8OVti9&_nc_ht=scontent.fdad1-1.fna&oh=3d02c32272251adac7419b850945f353&oe=5F814C4F" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng."</p>
+                <div class="member-name">Nguyễn Văn Vinh Quang<span>Coder Đà Nẵng</span></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/81033791_1506772692814136_5490219491470082048_o.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_ohc=jVdvcChDamIAX_LseW0&_nc_ht=scontent.fdad2-1.fna&oh=4f86a834cb58434c439f04c763372687&oe=5F8239DF" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng."</p>
+                <div class="member-name">Lê Văn Đạt<span>Coder Quế Xuân</span></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/19430105_247193659113179_8111665078107089552_n.jpg?_nc_cat=102&_nc_sid=174925&_nc_ohc=N_hOjzB9rGQAX8OVti9&_nc_ht=scontent.fdad1-1.fna&oh=3d02c32272251adac7419b850945f353&oe=5F814C4F" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng."</p>
+                <div class="member-name">Trần Văn Long<span>Coder Huế</span></div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="member-info">
+                <div class="img"><img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/117149743_10206984849216348_1466067966309647811_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=KJ85OhOQoEQAX8Otl9Y&_nc_ht=scontent.fdad1-1.fna&oh=67c95ca4f849c8d9ea9aeac5165a4246&oe=5F8010C7" alt=""></div>
+                <p>
+                    " Đã từng làm nhiều đề tài website với những mức độ khó khá cao, và học hổi được nhiều kinh
+                    nghiệm qua các dự án thực tế đó.
+                </p>
+                <p>
+                    Hiện tại đang làm kỹ sư phần mềm fullstack tại FPT software Đà Nẵng. Và là phụ trách chính
+                    của Website."
+                </p>
+                <div class="member-name">Hồ Đức Lĩnh<span>Buler FPT</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+@section ContactUs{
+@RenderPage("/Views/Shared/ContactUs.cshtml")
+}
+@section jsFooter{
+    <script type="text/javascript" src="~/Asserts/Client/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/jquery.form-validator.min.js"></script>
+    <script type='text/javascript'
+            src='https://maps.google.com/maps/api/js?key=AIzaSyAciPo9R0k3pzmKu6DKhGk6kipPnsTk5NU'></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/map-styleMain.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/placeholder.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/coustem.js"></script>
+}

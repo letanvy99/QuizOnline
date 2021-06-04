@@ -1,0 +1,45 @@
+﻿
+<div class="quck-nav">
+    <div class="container">
+        <div class="contact-no">
+            <a href="#">
+                <i class="fa fa-map-marker"></i>Tòa Nhà FPT Complex, Đường Nam Kỳ
+                Khởi Nghĩa, Phường Hoà Hải, Quận Ngũ Hành Sơn, TP Đà Nẵng
+            </a>
+        </div>
+        <div class="contact-no"><a href="#"><i class="fa fa-phone"></i>0984 888 888</a></div>
+        <!-- <div class="contact-no"><a href="#"><i class="fa fa-globe"></i>academy.com</a></div> -->
+        <div class="quck-right">
+            <div class="right-link language-select">
+                @{
+                    var sess = (Model.Common.UserLogin)Session[new Model.Common.CommonConstant().USER_SESSION];
+                }
+                @if( sess == null){
+                <a href="javascript:void(0);"><i class="fa fa-language"></i>Xin chào bạn</a>
+
+                }
+                else{
+                <a href="javascript:void(0);"><i class="fa fa-language"></i>Xin chào: @sess.UserName</a>
+                }
+                @*<ul class="language-list">
+            <li><a href="#">Tiếng Anh</a></li>
+        </ul>*@
+            </div>
+            <div class="right-link">
+                @if (sess == null)
+                {
+                    @Html.ActionLink("Đăng nhập", "Index", "Login") 
+
+                    @Html.ActionLink("Đăng Kí", "Index", "Register",null, new { Style = "margin-left:10px" })
+
+                }
+                else
+                {
+                    @Html.ActionLink("Đăng xuất", "Logout", "Login")
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>

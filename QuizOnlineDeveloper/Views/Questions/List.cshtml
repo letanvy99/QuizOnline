@@ -1,0 +1,228 @@
+﻿@using System.Data
+@model DataSet
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Asserts/Client/css/ListQuestionExcel.css" rel="stylesheet" />
+
+<style>
+
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+
+    #btn-import {
+        margin-top: 1%;
+    }
+
+    .input-file input[type="file"] {
+        display: none;
+    }
+
+</style>
+<section class="banner inner-page">
+    <div class="banner-img"><img src="~/Asserts/Client/images/banner/quiz.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Import Excel</h1>
+        </div>
+    </div>
+</section>
+<section class="breadcrumb white-bg">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Create Questions</a></li>
+            <li><a href="#">Excel File</a></li>
+        </ul>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @if (TempData["AlertMessage"] != null)
+                {
+                    <div id="AlertBox" class="alert @TempData["AlertType"]">
+                        @TempData["AlertMessage"]
+                        Quay về <a href="/ngan-hang-cua-toi" class="alert-link">Trang chủ</a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        @using (Html.BeginForm("List", "Questions", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.Raw(ViewBag.Error)
+            <!--<span>Excel file</span>-->
+            @*<input type="file" name="excelfile" />*@
+            <!--<div class="input-file">
+                <input type="file" name="excelfile" id="file" />
+                <label for="file" class="input-label">
+                    <i class="fas fa-cloud-upload-alt icon-upload"></i>
+                </label>
+            </div>
+            <br />
+            <input type="submit" value="Import" class="btn btn-outline-info" />-->
+            <br>
+            <div class="row wapper">
+                <div class="col-lg-4">
+                    <div class="dropdown">
+                        <div class="dropdown_select top">
+                            <span class="dropdown_selected">
+                                Import from desktop
+                            </span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="dropdown_select bottom">
+                            <span class="dropdown_selected">
+                                Import online
+                            </span>
+                            <i class="fas fa-upload"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-8 ">
+                    <div class="input-file">
+                        <input type="file" name="excelfile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" id="file" />
+                        <label for="file" class="input-label">
+                            <i class="fas fa-cloud-upload-alt icon-upload"></i>
+
+                            <h2 id="selected-file-name" style="color:#939ba4;"> Drag and drop your file</h2>
+
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <!-- <button type="submit" value="Import" class="btn btn-danger">Import</button> -->
+                        <input type="submit" value="Import" class="btn btn-danger btn-sm" id="btn-import" />
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        }
+
+
+        <div class="row">
+            <div class="col-xs-12 setTable">
+                @if (Model != null)
+                {
+                    <h2 id="title">Ngân hàng câu hỏi</h2>
+                    <table class="table table-bordered table-hover dt-responsive myTable" id="my-table">
+                        <thead>
+                            <tr>
+                                @foreach (DataColumn col in Model.Tables[0].Columns)
+                                {
+
+                                    <th align="center"> @col.ColumnName</th>
+                                }
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            @foreach (DataRow row in Model.Tables[0].Rows)
+                            {
+                                <tr>
+                                    @foreach (DataColumn col in Model.Tables[0].Columns)
+                                    {
+                                        <td>
+                                            <input type="text" value="@row[col.ColumnName]"
+                                                   data-original-title="@row[col.ColumnName]" data-container="body"
+                                                   data-toggle="tooltip" data-placement="bottom" style="text-align: center;" />
+                                            @*@row[col.ColumnName]*@
+                                        </td>
+                                    }
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <!-- <button type="submit" value="Import" class="btn btn-danger">Import</button> -->
+                        <button type="submit" class="btn btn-danger" id="btn-them">Save</button>
+                    </div>
+                }
+
+                <br />
+            </div>
+        </div>
+    </div>
+</section>
+@section jsFooter{
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="~/Asserts/Client/js/bootstrap.min.js"></script>
+    <link href="~/Asserts/Client/css/bootstrap.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+
+            //tooltips
+            $(function () {
+                $("[data-toggle='tooltip']").tooltip();
+            });
+            //
+
+
+
+            // catch on change event for input tooltips
+            $('input[type="text"]').on('input',function (e) {            
+                    
+            });
+
+            var fileName = "";
+            //get selected file name
+            $('input[type="file"]').change(function (e) {
+                fileName = e.target.files[0].name;
+                $('#selected-file-name').html(fileName);
+            });
+
+            //event hover tr in table
+            $('tr').hover(function () {
+                $(this).find('input').css("background-color", "rgb(233, 232, 232)");
+            }, function () {
+                $(this).find('input').css("background-color", "white");
+            });
+
+
+
+            $('#btn-them').click(function () {
+                var data = Array();
+                $("tbody tr").each(function (i, v) {
+                    data[i] = Array();
+                    $(this).children('td').each(function (ii, vv) {
+                        if ($(this).find('input[type="text"]').val() != "")
+                            data[i][ii] = $(this).find('input[type="text"]').val();
+                    });
+                })
+                console.log(data);
+                $.ajax({
+                    type: 'POST',
+                    url: '/Questions/Insert',
+                    data: JSON.stringify({ 'data': data }),
+                    traditional: true,
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'json',
+                    success: function (session) {
+                        //alert('Thêm thành công!');
+                        location.reload(true);
+                        //$('#AlertBox').addClass("alert-success");
+                        $('#AlertBox').delay(30000).slideUp(1000);
+                        window.Location.href = "/ngan-hang-cua-toi";
+                    },
+                    error: function () {
+                        alert('Failed ');
+                    }
+                });
+
+            });
+        });
+
+    </script>
+}

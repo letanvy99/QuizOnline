@@ -1,0 +1,134 @@
+﻿@model Model.ModelCustom.ContactToAdmin
+@{
+    ViewBag.Title = "ContactUS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="banner inner-page">
+    <div class="banner-img"><img style="height: 350px !important" src="~/Asserts/Client/images/banner/contact-us.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+        </div>
+    </div>
+</section>
+<section class="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/Home/Index">Trang chủ</a></li>
+            <li><a href="/Contact/ContactUs">Liên hệ</a></li>
+        </ul>
+    </div>
+</section>
+<section class="contact-detail">
+    <div class="container">
+        <div class="section-title">
+
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <p>Nếu bạn gặp vấn đề liên quan đến website của chúng tôi hãy liên hệ bằng những cách dưới đây :</p>
+        </div>
+        <div class="contact-boxView">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="contact-box yello">
+                        <div class="icon-box">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <h4>Địa Chỉ</h4>
+                        <p>14 Doãn Uẩn, Ngũ Hành Sơn, TP Đà Nẵng</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact-box green">
+                        <div class="icon-box">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>Số điện thoại</h4>
+                        <p>(84) 984 888 888</p>
+                        <p>(84) 984 321 322</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact-box red">
+                        <div class="icon-box">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h4>Địa chỉ Email</h4>
+                        <p><a href="#">quizonline@gmail.com.vn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-message" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Gửi mail cho chúng tôi</h2>
+        </div>
+
+        <div class="form-filde">
+            @using (Html.BeginForm("ContactUs", "Contact", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                if (ViewBag.Success != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade in">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Thành công!</strong>
+                        <div class="input-box">
+                            <p class="">@ViewBag.Success</p>
+                        </div>
+                    </div>
+                }
+                if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-warning alert-dismissible fade in hide" id="alertError">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Lỗi!</strong>
+                        <div class="input-box">
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                }
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-box">
+                            @Html.TextBoxFor(model => model.Name, new { @placeholder = "Họ & Tên" })
+                        </div>
+                        <div class="input-box">
+                            @Html.TextBoxFor(model => model.Email, new { @placeholder = "Địa chỉ mail của bạn" })
+                        </div>
+                        <div class="input-box">
+                            @Html.TextBoxFor(model => model.Subject, new { @placeholder = "Tiêu đề" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-box">
+                            @Html.TextAreaFor(model => model.Content, new { @placeholder = "Tin nhắn", @rows = "2" })
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="submit-box" style="text-align: center !important;">
+                            <input type="submit" value="Gửi Mail" class="btn">
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<section>
+    <div class="map-responsive map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.594359723897!2d108.24099841538234!3d16.03461814462248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175ea5d8d99d%3A0x2e7e2969e5e69555!2zMTQgRG_Do24gVeG6qW4sIEtodcOqIE3hu7ksIE5nxakgSMOgbmggU8ahbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1596101014216!5m2!1svi!2s"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>
+@section jsFooter{
+    <script type="text/javascript" src="~/Asserts/Client/js/bootstrap.js"></script>
+    <script>
+        $("#alertError").removeClass('hide');
+        $("#alertError").delay(7000).slideUp(1000);
+    </script>
+}
+
+

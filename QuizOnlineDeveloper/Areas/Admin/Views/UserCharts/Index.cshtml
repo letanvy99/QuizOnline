@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewBag.Title = "Bản đồ lượng người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Bản đồ lượng người dùng theo thời gian</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Bản đồ lượng người dùng</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+                <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <section class="col-lg-12 connectedSortable">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Lượng người dùng đăng kí mới theo thời gian</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart">
+                                <canvas id="lineChart"
+                                        style="min-height: 250px; height: 450px; max-height: 450px; max-width: 100%;"></canvas>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </section>
+
+                <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+@section jsFooter{
+    <!-- jQuery -->
+    <script src="~/Asserts/Admin/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Asserts/Admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="~/Asserts/Admin/plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Asserts/Admin/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Asserts/Admin/dist/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+        $(function () {
+            var list = JSON.parse('@Html.Raw(ViewBag.CountRegister)');
+            var maxvalue = @ViewBag.maxValue;
+            var division = (Math.floor(maxvalue / 4))+1;
+            console.log(division);
+            var labels = [];
+            var countRegister = [];
+            for (let i = 0; i < list.length; i++) {
+                labels.push(list[i].date);
+                countRegister.push(list[i].countRegister);
+            }
+            var areaChartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Nguời dùng đăng kí mới',
+                        backgroundColor: 'rgba(60,141,188,0.9)',
+                        borderColor: 'rgba(60,141,188,0.8)',
+                        pointRadius: true,
+                        pointColor: '#3b8bba',
+                        pointStrokeColor: 'rgba(60,141,188,1)',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188,1)',
+                        data: countRegister
+                    },
+                ]
+            }
+
+            var areaChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: true
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: true,
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            stepSize: division,
+                            beginAtZero: true,
+                            responsive: true,
+                            callback: function (value, index, values) {
+                                if (Math.floor(value) === value) {
+                                    return value;
+                                }
+                            }
+                        },
+                        gridLines: {
+                            display: true,
+                        }
+
+                    }]
+                }
+            }
+            //-------------
+            //- LINE CHART -
+            //--------------
+            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+            var lineChartOptions = jQuery.extend(true, {}, areaChartOptions)
+            var lineChartData = jQuery.extend(true, {}, areaChartData)
+            lineChartData.datasets[0].fill = false;
+            lineChartOptions.datasetFill = true
+
+            var lineChart = new Chart(lineChartCanvas, {
+                type: 'line',
+                data: lineChartData,
+                options: lineChartOptions
+            })
+        })
+    </script>
+}

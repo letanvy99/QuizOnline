@@ -1,0 +1,122 @@
+﻿<header id="header">
+    <div class="container">
+        <nav id="nav-main">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <a href="/trang-chu" class="navbar-brand"><img src="~/Asserts/Client/images/logo.png" alt=""></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                @*<div class="cart-box">
+                    <a href="cart.html"><i class="fa fa-shopping-basket"></i></a>
+                </div>*@
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active sub-menu">
+                            @Html.ActionLink("Trang Chủ", "Index", "Home")
+
+                        </li>
+                        <li class="mega-menu sub-menu">
+                            <a href="#">Khóa học</a>
+                            <div class="menu-view">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul>
+                                            <li>
+                                                @Html.ActionLink("Tạo mới khóa học", "Create", "CreateClass")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Khóa học tham gia", "MyClass", "ClassManagerment")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Khóa học của tôi", "Index", "ClassManagerment")
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub-menu mega-menu">
+                            <a href="#">Topic</a>
+                            <div class="menu-view" style="left: 66% !important">
+                                <div class="row">
+                                    <div class="col-sm-12 ">
+                                        <ul>
+                                            <li>
+                                                @Html.ActionLink("Tạo topic", "Createbank", "Bank")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Tạo câu hỏi", "Create", "Questions")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Import file excel", "List", "Questions")
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="sub-menu mega-menu">
+                            <a href="#">Kiểm tra</a>
+                            <div class="menu-view" style="left: 66% !important">
+                                <div class="row">
+                                    <div class="col-sm-12 ">
+                                        <ul>
+                                            <li>
+                                                @Html.ActionLink("Tạo bài kiểm tra", "Create", "CreateQuiz")
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Danh sách kiểm tra", "List", "Exam")
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            @Html.ActionLink("Liên hệ", "ContactUS", "Contact")
+                        </li>
+                        <li class="mega-menu sub-menu">
+                            @{
+                                var sess = (Model.Common.UserLogin)Session[new Model.Common.CommonConstant().USER_SESSION];
+                            }
+                            @if (sess == null)
+                            {
+                                <a href="javascript:void(0);"><i class="far fa-smile"></i></a>
+                            }
+                            else
+                            {
+                                <a><i class="fas fa-bars"></i></a>
+                                <div class="menu-view" style="left: 80% !important">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <ul>
+                                                <li>
+                                                    @Html.ActionLink("Thông tin cá nhân", "Index", "UpdateUser")
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Lịch của tôi", "Index", "Calendar")
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Ngân hàng của tôi", "Index", "Bank")
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

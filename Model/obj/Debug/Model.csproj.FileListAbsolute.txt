@@ -1,0 +1,91 @@
+E:\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+E:\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+E:\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+E:\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+E:\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+E:\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\QuizOnlineDeveloper\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+E:\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+E:\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\Model.dll.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\Model.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\Model.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\obj\Debug\Model.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\Model\obj\Debug\Model.pdb

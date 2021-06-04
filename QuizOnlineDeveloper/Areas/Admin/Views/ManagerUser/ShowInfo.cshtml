@@ -1,0 +1,87 @@
+﻿@model List<Model.EF.User>
+@{
+    ViewBag.Title = "Xem thông tin chi tiết";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Xem thông tin chi tiết</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Xem thông tin chi tiết</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <section class="col-lg-12 connectedSortable">
+                    <div class="card">
+                        <img style="max-height: 25rem;" class="card-img-top img-fluid" src="https://img.wallpapersafari.com/desktop/1920/1080/84/58/YycPRC.jpg" alt="Bologna">
+                        <div class="card-header  text-center">
+                            <img style="max-width: 11rem; margin-top: -6rem;margin-bottom: 1rem;" class="avatar rounded-circle" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/117149743_10206984849216348_1466067966309647811_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=KJ85OhOQoEQAX8Otl9Y&_nc_ht=scontent.fdad1-1.fna&oh=67c95ca4f849c8d9ea9aeac5165a4246&oe=5F8010C7" alt="Bologna">
+                        </div>
+                        <div class="card-body">
+
+                            <table class="table table-bordered table-striped">
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>Họ & Tên</th>
+                                        <td>@(item.FullName != null ? item.FullName : "")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tài Khoản</th>
+                                        <td>@item.UserName</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Số điện thoại</th>
+                                        <td>@(item.PhoneNumber != null ? item.PhoneNumber : "")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td>@item.Email</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Địa chỉ</th>
+                                        <td>@(item.Address != null ? item.Address : "")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Trạng Thái</th>
+                                        <td>Online</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kích hoạt</th>
+                                        <td>@(item.LockStatus == false ? "Kích hoạt" : "Khóa")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lý do khóa</th>
+                                        <td>@(item.LockNote != null ? item.LockNote : "")</td>
+                                    </tr>
+                                }
+
+                            </table>
+
+                        </div>
+                        <div class="col-12 text-center mb-3">
+                            @Html.ActionLink("Quay lại", "Index", "ManagerUser", routeValues: null, htmlAttributes: new { @class = "btn btn-primary", @role = "button" })
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+
+

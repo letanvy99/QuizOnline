@@ -1,0 +1,140 @@
+.card-quiz {
+    background-color: white;
+    box-shadow: grey 0px 5px;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+
+.card-quiz hr {
+    margin: 0% 0% -2% 0% !important;
+}
+
+.card-quiz h1 {
+    color: gray;
+    font-size: 30px;
+    padding-left: 1%;
+}
+
+.card-quiz span {
+    margin-left: 95%;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.card-quiz span:hover {
+    color: red;
+}
+
+.card-quiz input {
+    margin-top: 5%;
+}
+
+.addAnswer button h1 {
+    font-size: 15px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.addAnswer button {
+    width: 100%;
+    padding: 0% 3% 0% 3% !important;
+    margin: 4% 0% 0% 0%;
+}
+
+.myFile {
+    padding: 0.3%;
+}
+
+.myFile input:hover {
+    cursor: pointer;
+}
+
+.DeleteAnswer {
+    margin-left: 90%;
+    transition: color 0.5s;
+}
+
+.DeleteAnswer:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.typeQuestion {
+    margin-top: 1%;
+    width: 20%;
+}
+
+.btn {
+    margin: 1% 0% 0% 40%;
+}
+
+input#CheckRight {
+    margin: 0% 0% 0% 1%;
+}
+
+.AddQuestion {
+    background-color: white;
+    border: 1px grey dotted;
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 2% 0% 1% 5%;
+    visibility: visible;
+}
+
+.AddQuestion h1 {
+    font-size: 30px;
+    color: gray;
+}
+
+.AddQuestionMove {
+    font-size: 0.8rem;
+    width: 130px;
+    padding: 2% 0% 2% 0%;
+    position: fixed;
+    left: 1%;
+    top: 0;
+}
+
+.AddQuestionMove #stateChoose2 {
+    width: 230px !important;
+    margin: 3% 0% 3% 0%;
+    padding: 3%;
+}
+
+.AddQuestionMove .btn {
+    margin: 0;
+}
+
+.AddQuestionMove #stateChoose2 select {
+    margin: 10% !important;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .text-editor{
+      margin: 0 auto;
+      /* margin-top: 5rem; */
+  }
+
+  .DeleteQuestion{
+      background-color: aqua;
+      align-items: center;
+  }

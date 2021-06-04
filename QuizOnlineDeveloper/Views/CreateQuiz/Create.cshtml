@@ -1,0 +1,661 @@
+﻿@model Model.EF.Exam
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body> 
+    <div class="wapper">
+        <section class="banner inner-page">
+            <div class="banner-img"><img src="~/Asserts/Client/images/banner/cart.jpg" alt=""></div>
+            <div class="page-title">
+                <div class="container">
+                    <h1>Tạo Bài Thi</h1>
+                </div>
+            </div>
+        </section>
+        <section class="breadcrumb ">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Kiểm Tra</a></li>
+                    <li><a href="#">Tạo Bài Kiểm Tra</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="cart-page">
+            <form action="" name="myform" onsubmit="return validateform()">
+                <div class="container">
+                    <div class="table-view">
+                        <div class="cart-table">
+                            <table>
+                                <tr>
+                                    <th>Tên Quiz</th>
+                                    <th class="FromBank">Chọn Bank</th>
+                                    <th>Số Câu Hỏi</th>
+                                    <th>Số Lần Thi Lại</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                                <tr>
+                                    <td class="Special">
+                                        @Html.TextBoxFor(model => model.ExamName, new { @class = "form-control InputName", id = "NameQuiz", placeholder = "Name Of Quiz" })
+                                        <small class="text-danger" id="WrongNameQuiz"></small>
+                                    </td>
+                                    <td class="Special">
+                                        @Html.DropDownListFor(model => model.ExamCategoryID, new SelectList(ViewBag.quizTest, "CategoryID", "Typename", "UserID"), "Please select", new { @class = "form-control InputBank", id = "dllCategory" })
+                                        <small class="text-danger" id="WrongInputBank"></small>
+                                    </td>
+                                    <td>
+                                        <div class="quantity-box">
+                                            @Html.EditorFor(model => model.QuantityQuestion, new { htmlAttributes = new { id = "TotalQuestion", disabled = "true", @Value = "0" } })
+                                        </div>                                      
+                                    </td>
+                                    <td>
+                                        <div class="quantity-box">
+                                            <i class="fa fa-minus minus"></i>
+                                            @Html.EditorFor(model => model.QuantityQuestion, new { htmlAttributes = new { id = "NumberOfRemake", disabled = "true", @Value = "0" } })
+                                            <i class="fa fa-plus plush"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span><i class="fa fa-undo reset"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Loại Random Câu Hỏi</th>
+                                    <th>Cho Xem Lại</th>
+                                    <th>số câu khó</th>
+                                    <th>số câu Trung bình</th>
+                                    <th>Số Câu dễ</th>
+                                </tr>
+                                <tr>
+                                    <td class="Special">
+                                        <select class="form-control RandomThi" name="" id="option_Random">
+                                            <option value="">Chọn loại random</option>
+                                            <option value="1">Random dành cho Thi Học kì</option>
+                                            <option value="2">Random mọi người khác nhau</option>
+                                        </select>
+                                        <small class="text-danger" id="WrongRandomThi"></small>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+
+                                                <input type="radio" class="form-check-input" name="CheckReview" id="YesCheck" value="Yes">
+                                                <label for="Yes">Yes</label>
+                                            </label>
+                                            <label class="form-check-label">
+
+                                                <input type="radio" class="form-check-input" name="CheckReview" id="NoCheck" value="No">
+                                                <label for="No">No</label>
+                                            </label>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="quantity-box">
+                                            <i class="fa fa-minus minus"></i>
+                                            @Html.EditorFor(model => model.HardQuestion, new { htmlAttributes = new { id = "HardQuestion", @Value = "0" } })
+                                            <i class="fa fa-plus plush"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="quantity-box">
+                                            <i class="fa fa-minus minus"></i>
+                                            @Html.EditorFor(model => model.NormalQuestion, new { htmlAttributes = new { id = "NormalQuestion", @Value = "0" } })
+                                            <i class="fa fa-plus plush"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="quantity-box">
+                                            <i class="fa fa-minus minus"></i>
+                                            @Html.EditorFor(model => model.EasyQuestion, new { htmlAttributes = new { id = "EasyQuestion", @Value = "0" } })
+                                            <i class="fa fa-plus plush"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-lg-12 col-md-12 ">
+                            <div class="col-lg-3 col-md-12 Sdaydiv">
+                                <label for="">Ngày Bắt Đầu</label>
+                                @Html.EditorFor(model => model.StartDay, new { htmlAttributes = new { @class = "form-control Sday", id = "StartD", @type = "datetime-local" } })
+                                <small class="text-danger" id="WrongSday"></small>
+                            </div>
+                            <div class="col-lg-3 col-md-12 Edaydiv">
+                                <label for="">Ngày Kết Thúc</label>
+                                @Html.EditorFor(model => model.EndDay, new { htmlAttributes = new { @class = "form-control Eday", id = "EndD", @type = "datetime-local" } })
+                                <small class="text-danger" id="WrongEday"></small>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <label for="">Enter Key</label>
+                                @Html.EditorFor(model => model.AcceptCode, new { htmlAttributes = new { @class = "form-control addKey", id = "EnrolKey" } })
+                                <small class="text-danger" id="Wrongkey"></small>
+                            </div>
+
+                            <div class="col-lg-3 col-md-12">
+                                <label for="">Thời Gian Làm Bài</label>
+                                @Html.EditorFor(model => model.ExamTime, new { htmlAttributes = new { @class = "form-control addTime", id = "timQuiz", @placeholder = "Time Quiz : min" } })
+                                <small class="text-danger" id="WrongaddTime"></small>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <label for="">Chọn Lớp tham gia thi</label>
+                                <select class="js-example-basic-multiple Inputclass" multiple="multiple" style="width:100%">
+                                    <option>-- Chọn lớp của tôi --</option>
+                                    <option></option>
+                                </select>
+                                <small class="text-danger" id="Wrongclass"></small>
+                            </div>
+                            <div class="CreateBtn col-lg-12  col-md-12">
+                                <input name="" id="SubmitAndCheck" class=" form-control btn" type="submit" value="Tạo Quiz">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <div id="shadowbox">
+                <div id="Addsucces" class=" text-center">
+                    <h3>Đã Thêm Bài Quiz Thành Công</h3>
+                    <hr>
+                    <a name="" id="" class="btn " href="@Url.Action("Index", "Home")" role="button">Trở về trang chủ</a>
+                    <a name="" id="" class="btn " href="@Url.Action("Create", "CreateQuiz")" role="button">Tạo Thêm Quiz Nữa</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+
+<style>
+    #shadowbox {
+        background-color: rgb(0, 0, 0, 0.8);
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #Addsucces {
+        background-color: whitesmoke;
+        position: fixed;
+        top: 35%;
+        left: 35%;
+        width: 30%;
+        margin: 5% auto auto auto;
+        padding: 2% 0% 2% 0%;
+        box-shadow: inset 0 0 10px black;
+        border: 1px grey solid;
+    }
+
+        #Addsucces hr {
+            border: 0.5px gray solid;
+            width: 80%;
+        }
+
+        #Addsucces a {
+            color: black;
+            font-size: 16px;
+            margin: 0% 3% 2% 3%;
+            padding: 0.5% 1% 0.5% 1%;
+            border: gainsboro 1px solid;
+            background-color: whitesmoke;
+        }
+
+            #Addsucces a:hover {
+                color: white;
+                background-color: rgb(133, 51, 51) !important;
+            }
+
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+    .Special {
+        text-align: left !important;
+        padding: 30px 0px 30px 0px !important;
+    }
+
+    #WrongRandomThi, #WrongNameQuiz, #WrongInputBank {
+        position: absolute;
+        margin: 5px 0px 0px 10px;
+    }
+</style>
+@section jsFooter{
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="~/Asserts/Client/css/MakeQuizTest.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+    var list = JSON.parse('@Html.Raw(ViewBag.classString)');
+    var ClassNameArray = [];
+    var NameSelectedArr = [];
+
+    for (let index = 0; index < list.length; index++) {
+        ClassNameArray.push(list[index].ClassName);
+    }
+    console.log(list)
+
+
+    $(document).ready(function () {
+        $("#shadowbox").hide();
+        $("#addsucces").hide();
+        var Hard = $('#HardQuestion').val();
+        var Normal = $('#NormalQuestion').val();
+        var Easy = $('#EasyQuestion').val();
+        var Total
+
+        var easyCheck;
+        var normalCheck;
+        var hardCheck;
+
+        $('#dllCategory').change(function (e) {
+            e.preventDefault();
+            var idcate = parseInt($('#dllCategory').val());
+
+            $.ajax({
+                type: 'POST',
+                url: '/CreateQuiz/check',
+                data: JSON.stringify({ 'idcate': idcate }),
+                traditional: true,
+                contentType: 'application/json; charset=utf-8',
+                datatype: 'json',
+                success: function (check) {
+                    easyCheck = JSON.stringify(check[0]);
+                    normalCheck = JSON.stringify(check[1]);
+                    hardCheck = JSON.stringify(check[2]);
+
+                    $('.plush').click(function (e) {
+                        e.preventDefault();
+                        var quality = $(this).parent().find('#EasyQuestion');
+                        var quality1 = $(this).parent().find('#NormalQuestion');
+                        var quality2 = $(this).parent().find('#HardQuestion');
+                        var quality3 = $(this).parent().find('#NumberOfRemake');
+                        var qty = quality.val();
+                        var qty1 = quality1.val();
+                        var qty2 = quality2.val();
+                        var qty3 = quality3.val();
+                        var value = parseInt(qty);
+                        var value1 = parseInt(qty1);
+                        var value2 = parseInt(qty2);
+                        var value3 = parseInt(qty3);
+                        if (value >= 0) {
+                            value = value + 1;
+                        }
+                        if (value1 >= 0){
+                            value1 = value1 + 1;
+                        }
+                        if (value2 >= 0) {
+                            value2 = value2 + 1;
+                        }
+                        if (value > easyCheck) {
+                            value = easyCheck;
+                        }
+                        if (value1 > normalCheck) {
+                            value1 = normalCheck;
+                        }
+                        if (value2 > hardCheck) {
+                            value2 = hardCheck;
+                        }
+                        if (value3 >= 0) {
+                            value3 = value3 + 1;
+                        }
+                        quality.val(value)
+                        quality1.val(value1)
+                        quality2.val(value2)
+                        quality3.val(value3)
+
+                        Hard = $('#HardQuestion').val();
+                        Normal = $('#NormalQuestion').val();
+                        Easy = $('#EasyQuestion').val();
+                        Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                        $('#TotalQuestion').val(Total);
+
+                    });
+                    $('.minus').click(function (e) {
+                        e.preventDefault();
+                        var quality = $(this).parent().find('input');
+                        var qty = quality.val();
+                        var value = parseInt(qty);
+                        if (value >= 1) {
+                            value = value - 1;
+                        } else {
+                            value = 0;
+                        }
+                        quality.val(value)
+                        Hard = $('#HardQuestion').val();
+                        Normal = $('#NormalQuestion').val();
+                        Easy = $('#EasyQuestion').val();
+                        Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                        $('#TotalQuestion').val(Total);
+                    });
+
+                    $('#HardQuestion,#NormalQuestion,#EasyQuestion').blur(function (e) {
+                        e.preventDefault();
+                        Hard = $('#HardQuestion').val();
+                        Normal = $('#NormalQuestion').val();
+                        Easy = $('#EasyQuestion').val();
+                        if (Hard < 0 || Normal < 0 || Easy < 0) {
+                            alert('số câu khó / số câu Trung bình / Số Câu dễ phải là số Nguyên DƯƠNG ')
+                            $(this).val(0)
+                            Hard = $('#HardQuestion').val();
+                            Normal = $('#NormalQuestion').val();
+                            Easy = $('#EasyQuestion').val();
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        } else if (Hard % 1 != 0 || Normal % 1 != 0 || Easy % 1 != 0) {
+                            alert('số câu khó / số câu Trung bình / Số Câu dễ phải là Số Nguyên Dương ')
+                            $(this).val(0)
+                            Hard = $('#HardQuestion').val();
+                            Normal = $('#NormalQuestion').val();
+                            Easy = $('#EasyQuestion').val();
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        } else if (parseInt(Hard) > parseInt(hardCheck)) {
+                            alert('số câu khó trong Bank Không đủ , số câu khó hiện có là : ' + hardCheck)
+                            $(this).val(0)
+                            Hard = $('#HardQuestion').val();
+                            Normal = $('#NormalQuestion').val();
+                            Easy = $('#EasyQuestion').val();
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        } else if (parseInt(Normal) > parseInt(normalCheck)) {
+                            alert('số câu Trung Bình trong Bank Không đủ , số câu Trung Bình hiện có là : ' + normalCheck)
+                            $(this).val(0)
+                            Hard = $('#HardQuestion').val();
+                            Normal = $('#NormalQuestion').val();
+                            Easy = $('#EasyQuestion').val();
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        } else if (parseInt(Easy) > parseInt(easyCheck)) {
+                            alert('số câu Dễ trong Bank Không đủ , số câu Dễ hiện có là : ' + easyCheck)
+                            $(this).val(0)
+                            Hard = $('#HardQuestion').val();
+                            Normal = $('#NormalQuestion').val();
+                            Easy = $('#EasyQuestion').val();
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        }
+                        else {
+                            Total = parseInt(Hard) + parseInt(Normal) + parseInt(Easy);
+                            $('#TotalQuestion').val(Total);
+                        }
+
+                    });
+                },
+                error: function () {
+                    alert('Chọn Bank ,PLS')
+                }
+            });
+
+        })
+        $('#HardQuestion,#NormalQuestion,#EasyQuestion').blur(function (e) {
+            e.preventDefault();
+            if ($('#dllCategory')[0].selectedIndex == 0) {
+                $('#HardQuestion').val(0);
+                $('#NormalQuestion').val(0);
+                $('#EasyQuestion').val(0);
+                alert('Làm ơn chọn bank')
+            }
+        })
+        $('.minus,.plush').click(function (e) {
+            if ($('#dllCategory')[0].selectedIndex == 0) {
+                $('#HardQuestion').val(0);
+                $('#NormalQuestion').val(0);
+                $('#EasyQuestion').val(0);
+                alert('Làm ơn chọn bank')
+            }
+        });
+        $('.reset').click(function (e) {
+            e.preventDefault();
+            $('.InputBank').val('');
+            $('#option_Random').val('');
+            $('#YesCheck').prop("checked", false);
+            $('#NoCheck').prop("checked", false);
+            $('#HardQuestion').val(0);
+            $('#NormalQuestion').val(0);
+            $('#EasyQuestion').val(0);
+            $('#TotalQuestion').val(0); 
+            $('#NumberOfRemake').val(0);
+        });
+        $('.Keyjoin').click(function (e) {
+            e.preventDefault();
+            $('.cart-row').html('');
+        });
+
+
+        $('#NumberOfRemake').blur(function (e) {
+            var Remake = $('#NumberOfRemake').val();
+            if (Remake < 0) {
+                alert('Chỉ là số nguyên dương')
+                $('#NumberOfRemake').val(0);
+            } else if (Remake % 1 != 0) {
+                alert('Số Nguyên dương')
+                $('#NumberOfRemake').val(0);
+            }
+        });
+        $(".js-example-basic-multiple").select2({
+            data: ClassNameArray
+        });
+
+        $('#SubmitAndCheck').click(function (e) {
+            e.preventDefault();
+            $('#WrongNameQuiz span').remove();
+            $('#WrongInputBank span').remove();
+            $('#WrongRandomThi span').remove();
+            $('#WrongSday span').remove();
+            $('#WrongEday span').remove();
+            $('#Wrongkey span').remove();
+            $('#WrongaddTime span').remove();
+            $('#WrongQuestion span').remove();
+            $('#Wrongclass span').remove();
+
+
+
+            if ($('#NameQuiz').val().length == 0) {
+                $('#WrongNameQuiz').html('<span>Điền tên Quiz</span>');
+            }
+            if ($(".InputBank")[0].selectedIndex == 0) {
+                $('#WrongInputBank').html('<span>Chọn Bank</span>');
+            }
+            if ($(".RandomThi")[0].selectedIndex == 0) {
+                $('#WrongRandomThi').html('<span>Chọn Loại random</span>');
+            }
+            if ($(".Sday").val().length == 0) {
+                $('#WrongSday').html('<span>Chọn ngày bắt đầu</span>');
+            }
+            if ($(".Eday").val().length == 0) {
+                $('#WrongEday').html('<span>Chọn ngày kết thúc</span>');
+            }
+            if ($(".addKey").val().length == 0) {
+                $('#Wrongkey').html('<span>Vui lòng nhập key</span>');
+            }
+            if ($(".addKey").val().length > 10) {
+                $('#Wrongkey').html('<span>Key 10 Kí tự trở xuống</span>');
+            }
+            if ($(".addTime").val().length == 0) {
+                $('#WrongaddTime').html('<span>Điền Thời Gian Thi</span>');
+            }
+            if ($("#TotalQuestion").val() == 0) {
+                $('#WrongQuestion').html('<span>Đã Tạo Quiz Thì bỏ Question vào</span>');
+            }
+            if ($(".Inputclass").val() == '') {
+                $('#Wrongclass').html('<span>Điền class vào</span>');
+            }
+            if ($(".Inputclass")[0].selectedIndex == 0) {
+                $('#Wrongclass').html('<span>Chỉ chọn class không chọn ghi chú</span>');
+            }
+            if ($('#NameQuiz').val().length != 0 && $(".InputBank")[0].selectedIndex != 0 && $(".RandomThi")[0].selectedIndex != 0 &&
+                $(".Sday").val().length != 0 && $(".Eday").val().length != 0 && $(".addKey").val().length != 0 && $(".addTime").val().length != 0 && $("#TotalQuestion").val() != 0 && $(".Inputclass").val() != '' && $(".Inputclass")[0].selectedIndex != 0) {
+                $("#shadowbox").show(300)
+                $("#Addsucces").show(600);
+                $('.select2-selection__choice__display').each(function () {
+                    NameSelectedArr.push($(this).text());
+                })
+
+                var NameQuiz = $("#NameQuiz").val()
+                var TotalQ = $("#TotalQuestion").val()
+                var Remake = $("#NumberOfRemake").val()
+
+                var randomType;
+                if ($("#YesCheck:checked").val() == 'Yes') {
+                    randomType = 1;
+                } else if ($("#NoCheck:checked").val() == 'No') {
+                    randomType = 0;
+                }
+
+                var Hard = $("#HardQuestion").val()
+                var Normal = $("#NormalQuestion").val()
+                var Easy = $("#EasyQuestion").val()
+                var DStart = $("#StartD").val()
+                var DEnd = $("#EndD").val()
+                var Key = $("#EnrolKey").val()
+                var TimeMakeQuiz = $("#timQuiz").val()
+                var idcate = $('#dllCategory').val();
+                var optionRandom = $('#option_Random').val()
+
+                if (optionRandom == 1)
+                    optionRandom = 0; // 0= Random Theo kieu thi hoc ky
+                else if (optionRandom == 2)
+                    optionRandom = 1; // 1= Random Theo kieu Khong ai giong ai
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/CreateQuiz/CreateQuiz',
+                    data: JSON.stringify({ 'NameQuiz': NameQuiz, 'idcate': idcate, 'TotalQ': TotalQ, 'Remake': Remake, 'randomType': randomType, 'Hard': Hard, 'Normal': Normal, 'Easy': Easy, 'DStart': DStart, 'DEnd': DEnd, 'Key': Key, 'TimeMakeQuiz': TimeMakeQuiz, 'optionRandom': optionRandom, 'NameSelectedArr': NameSelectedArr }),
+                    traditional: true,
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'json',
+                    success: function () {
+                        alert('Success ');
+                    },
+                    error: function () {
+
+                    }
+                });
+            }
+
+
+        })
+        $('.Sday,.Eday').blur(function (e) {
+            var stringSday = $(".Sday").val()
+            var Smin = stringSday.slice(14, 16);
+            var Shours = stringSday.slice(11, 13);
+            var Sdayday = stringSday.slice(8, 10);
+            var SdayMonth = stringSday.slice(5, 7);
+            var SdayYear = stringSday.slice(0, 4);
+            var TotalSday = SdayYear + SdayMonth + Sdayday + Shours + Smin
+
+            var stringEday = $(".Eday").val()
+            var Emin = stringEday.slice(14, 16);
+            var Ehours = stringEday.slice(11, 13);
+            var Edayday = stringEday.slice(8, 10);
+            var EdayMonth = stringEday.slice(5, 7);
+            var EdayYear = stringEday.slice(0, 4);
+            var TotalEday = EdayYear + EdayMonth + Edayday + Ehours + Emin
+
+            var currentdate = new Date();
+
+            var curentMin = currentdate.getMinutes();
+            if (curentMin < 10) {
+                curentMin = 0 + curentMin.toString()
+            } else {
+                curentMin = curentMin;
+            }
+
+            var curentHours = currentdate.getHours();
+            if (curentHours < 10) {
+                curentHours = 0 + curentHours.toString()
+            } else {
+                curentHours = curentHours;
+            }
+
+            var CurentDay = currentdate.getDate();
+            if (CurentDay < 10) {
+                CurentDay = 0 + CurentDay.toString()
+            } else {
+                CurentDay = CurentDay;
+            }
+
+            var CurentMonth = parseInt(currentdate.getMonth() + 1);
+            if (CurentMonth < 10) {
+                CurentMonth = 0 + CurentMonth.toString()
+            } else {
+                CurentMonth = CurentMonth;
+            }
+
+            var CurentYear = currentdate.getFullYear();
+            var TotalCurentday = CurentYear.toString() + CurentMonth.toString() + CurentDay.toString() + curentHours.toString() + curentMin.toString()
+
+
+            if (parseInt(TotalCurentday) > parseInt(TotalSday) || parseInt(TotalCurentday) > parseInt(TotalEday)) {
+                alert("Ngày / Giờ / Phút Bắt đầu Hoặc kết thúc phải nằm ở Hiện tại hoặc tương lai")
+                $(".Sday").val('')
+                $(".Eday").val('')
+            } else if (parseInt(TotalSday) > parseInt(TotalEday)) {
+                alert("Ngày bắt đầu phải lớn hơn hoặc bằng ngày kết thúc")
+                $(".Sday").val('')
+                $(".Eday").val('')
+            }
+            else if (parseInt(Sdayday) == parseInt(Edayday) && parseInt(SdayMonth) == parseInt(EdayMonth) && parseInt(SdayYear) == parseInt(EdayYear) && Smin == Emin && Shours == Ehours) {
+                alert("Thời gian Kết thúc phải lớn hơn thời gian bắt đầu")
+                $(".Eday").val('')
+            }
+
+            $('.addTime').blur(function (e) {
+                e.preventDefault();
+                var stringSday = $(".Sday").val()
+                var Smin = stringSday.slice(14, 16);
+                var Shours = stringSday.slice(11, 13);
+                var Sdayday = stringSday.slice(8, 10);
+                var SdayMonth = stringSday.slice(5, 7);
+                var SdayYear = stringSday.slice(0, 4);
+                var stringEday = $(".Eday").val()
+                var Emin = stringEday.slice(14, 16);
+                var Ehours = stringEday.slice(11, 13);
+                var Edayday = stringEday.slice(8, 10);
+                var EdayMonth = stringEday.slice(5, 7);
+                var EdayYear = stringEday.slice(0, 4);
+                var TimeOpen = ((Ehours - Shours) * 60) + (Emin - Smin);
+                if (Sdayday == Edayday && SdayMonth == EdayMonth && SdayYear == EdayYear) {
+                    if (parseInt($('.addTime').val()) > TimeOpen) {
+                        alert('Thời gian mở bài thi phải lớn hơn thời gian bài thi');
+                        $('.addTime').val('');
+                    }
+                }
+            });
+        });
+    })
+        var counter = null;
+        var counter_stop = null;
+
+
+        $('.check-outBtn').click(function (e) {
+            e.preventDefault();
+            $('.quantity-box').find('input').val();
+            $('.InputName').val();
+            $('.InputBank').val();
+        });
+
+        function validateform() {
+            var key = document.myform.key.value;
+
+            if (key == null) {
+                alert("Name can't be blank");
+                return false;
+            } else if (key.length > 10 || key.length <= 1) {
+                alert("Key phải từ 1 - 10 kí tự.");
+                return false;
+            }
+        }
+    </script>
+
+
+}

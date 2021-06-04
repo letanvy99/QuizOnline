@@ -1,0 +1,673 @@
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+E:\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Owin.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+E:\Cong ty\Version0.2_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Owin.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\Version0.3_QuizOnlineDeveloper\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Owin.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+C:\Users\LongTVDE130062\Downloads\Version0.9.2QuizOnline\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\QuizOnlineDeveloper.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.exe.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csc.rsp
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.exe.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\csi.rsp
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.AppContext.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Console.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Http.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.exe.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\vbc.rsp
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Owin.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\WebGrease.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CommonProject.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Model.dll.config
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\CaptchaMvc.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\EntityFramework.SqlServer.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.Owin.Security.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Helpers.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Mvc.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Optimization.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.Razor.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Newtonsoft.Json.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Antlr3.Runtime.pdb
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csprojAssemblyReference.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CoreCompileInputs.cache
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.csproj.CopyComplete
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.dll
+C:\Users\tranq\Desktop\Version1.0QuizOnline-20200912T071709Z-001\QuizOnlineDeveloper\QuizOnlineDeveloper\obj\Debug\QuizOnlineDeveloper.pdb

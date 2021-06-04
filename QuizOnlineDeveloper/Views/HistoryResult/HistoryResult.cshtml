@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Model.ModelCustom.HistoryResult>
+
+
+
+@{ ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+<style>
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+</style>
+<section class="banner inner-page">
+    <div class="banner-img"><img src="~/Asserts/Client/images/banner/cart.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Lịch sử làm bài</h1>
+            <div id="countdown"></div>
+        </div>
+    </div>
+</section>
+<section class="breadcrumb ">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Quiz History</a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="cart-page">
+    <form action="">
+        <div class="container">
+            <table class="table table-inverse table-responsive ">
+                <thead class="thead-inverse ">
+                    <tr>
+                        <th>
+                            Tên bài thi
+                        </th>
+                        <th>
+                            Tên lớp
+                        </th>
+                        <th>
+                            Thời gian hoàn thành
+                        </th>
+                        <th>
+                            Kết quả
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ExamName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ClassName)
+                            </td>
+                            <td>
+                                @{
+                                
+
+                                string GetExactlyTime(int time)
+                                {
+                                        var intTime = time / 60;
+                                        var doubleTime = time*1.0 / 60;
+                                        var sec = Convert.ToInt32((doubleTime- intTime)*60);
+                                        return intTime + " phut " + sec + " s";
+                                }
+                                }
+                                @Html.Raw(GetExactlyTime(@item.TimeComplete))
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaxPoint)
+                            </td>                            
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </form>
+</section>
+<link href="~/Asserts/Client/css/Quiz_History.css" rel="stylesheet" />

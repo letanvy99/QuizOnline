@@ -1,0 +1,311 @@
+﻿@model Model.EF.Class
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+@{
+    var sess = (Model.Common.UserLogin)Session[new Model.Common.CommonConstant().USER_SESSION];
+}
+
+<div class="course-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-9">
+                <h2>@Model.ClassName</h2>
+                <div class="course-details-main">
+                    <div class="course-img">
+                        <img src="~/Asserts/Client/images/courses/courses-img8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="info">
+                    <h4>Mô Tả</h4>
+                    <p>@Model.Description </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="right-slide">
+                    <h3>Chi Tiết Khóa Học</h3>
+                    <div class="course-details-list">
+                        <ul>
+                            <li>
+                                <i class="fa fa-user-secret"></i>Người tạo:
+                                @{
+                                    var createby = (long)Model.CreateBy;
+                                    var name = new Model.Dao.UserDao().GetName(createby);
+                                }
+                                @name
+                            </li>
+                            <li><i class="fa fa-file"></i>Thời Gian Tạo: @Model.CreateAt.Value.ToString("dd-MM-yyyy")</li>
+                            <li>
+                                <i class="fa fa-mortar-board"></i>Số lượng học viên:
+                                @{
+                                    var classidcount = Model.ClassID;
+                                    var count = new Model.Dao.ClassUserDao().countClassUser(classidcount);
+                                }
+                                @count
+                            </li>
+                            <li>
+                                <i class="fa fa-file-text"></i>Số lượng bài kiểm tra:
+                                @{
+                                    var classidcountexam = Model.ClassID;
+                                    var countexam = new Model.Dao.ClassExamDAO().countClassExam(classidcount);
+                                }
+                                @countexam
+                            </li>
+                            <li id="ernrol"></li>
+                        </ul>
+                        <div class="btn-block">
+                            <button class="btn" id="btn_xoa">Xóa Khóa Học</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h4>Học Viên</h4>
+            <table id="my-table" class="table table-responsive" style="background-color:white">
+                <thead>
+                <th>STT</th>
+                <th>UserName</th>
+                <th>Tên Sinh Viên</th>
+                <th>Email</th>
+                <th>Số Điện Thoại</th>
+                <th>Địa Chỉ</th>
+                <th>Tình trạng</th>
+                <th id="th_del">Thao tác</th>
+                </thead>
+                <tbody>
+                    @{
+                        var ModelClassUser = new Model.Dao.ClassUserDao().ListUserByClassID(Model.ClassID);
+                        foreach (var item in ModelClassUser)
+                        {
+                            <tr id="row_@item.UserID">
+
+                                <td>@(ModelClassUser.IndexOf(item) + 1)</td>
+                                <td>@Html.DisplayFor(modelItem => item.UserName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                                <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                                <td>
+                                    @{
+                                        var statusstr = "";
+                                        var status = item.LockStatus;
+                                        if (status == true)
+                                        {
+                                            statusstr = "Lock";
+                                        }
+                                        else
+                                        {
+                                            statusstr = "UnLock";
+                                        }
+                                    }
+                                    @statusstr
+                                </td>
+                                <td id="td_del">
+                                    <div class="col-lg-2">
+                                        <i data-id="@item.UserID" class="fa fa-trash xoa"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="info">
+            <h4>Biểu Đồ Điểm Lớp <span>@Model.ClassName</span></h4>
+            <div class="container col-lg-2">
+                <label for="">Chọn bài kiểm tra:</label>
+                @Html.DropDownList("ExamID", new SelectList(ViewBag.ListExam, "ExamID", "ExamName"), "Chọn bài kiểm tra", new { @class = "form-control text-right", id = "exam" })
+            </div>
+            <div class="container col-lg-10">
+                <canvas id="lineChart">
+                </canvas>
+            </div>
+        </div>
+    </div>
+</div>
+@section jsFooter{
+    <script type="text/javascript" src="~/Asserts/Client/"></script>
+    <script src="~/Asserts/Client/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/placeholder.js"></script>
+    <script type="text/javascript" src="~/Asserts/Client/js/coustem.js"></script>
+    <link rel="stylesheet" href="~/Asserts/Admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Asserts/Admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+
+    <script src="~/Asserts/Admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/Asserts/Admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Asserts/Admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Asserts/Admin/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Asserts/Admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+    <script src="~/Asserts/Admin/dist/js/adminlte.min.js"></script>
+
+    <script src="~/Asserts/Admin/dist/js/demo.js"></script>
+
+    <script>
+
+        if (@Model.CreateBy==@sess.UserID) {
+            $("#ernrol").html('<i class="fa fa-file-text"></i>Mã lớp học: @Model.Enrollmentkey');
+        }
+        else {
+            $("#th_del,#td_del").remove();
+            $("#btn_xoa").attr("disabled", true);
+        }
+    $(document).ready(function () {
+        $("#btn_xoa").on("click", function (e) {
+            $.ajax({
+                    type: 'POST',
+                    url: '/ClassManagerment/DeleteClass',
+                    data: JSON.stringify(
+                        {
+                            'classid': @Model.ClassID
+                        }),
+                    traditional:true,
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'json',
+                success: function () {
+                        alert('Fail');
+
+                    },
+                    error: function () {
+                        location.href = "/khoa-hoc-cua-toi";
+                    }
+                });
+        });
+        $(".xoa").on("click", function () {
+            var childTr = $(this).closest('tr');
+            var userid = $(this).attr("data-id");
+            if (confirm("Bạn có muốn xóa học sinh này ra khỏi lớp học")) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ClassManagerment/Delete',
+                    data: JSON.stringify(
+                        {
+                            'userid': userid,
+                            'classid': @Model.ClassID
+                        }),
+                    traditional:true,
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'json',
+                success: function () {
+                    alert(userid)
+                    },
+                    error: function () {
+                        childTr.css('background', '#02cbf7');
+                        childTr.fadeOut(800, function () {
+                            childTr.remove();
+                        });
+                    }
+                });
+            }
+        });
+    });
+
+        $('#exam').change(function () {
+            var examid = $('#exam').val();
+            $.ajax({
+                    type: 'GET',
+                    url: '/ClassManagerment/Chart',
+                    data: (
+                        {
+                            'classID': @Model.ClassID,
+                            'examID': examid
+
+                        }),
+                    traditional:true,
+                    contentType: 'application/json; charset=utf-8',
+                    datatype: 'json',
+                success: function (chart) {
+                    console.log(chart);
+                    var list = chart;
+                    var nameArray = [];
+                    var markArray = [];
+                    var timeArray = [];
+                    for (let index = 0; index < list.length; index++) {
+                        nameArray.push(list[index].name);
+                        markArray.push(list[index].mark);
+                        timeArray.push(list[index].time);
+
+                    }
+                    var chart = document.getElementById('lineChart').getContext('2d');
+                    var line_chart = new Chart(chart, {
+                        type: 'bar',
+                        data: {
+                            labels: nameArray,
+                            datasets: [
+                                {
+                                    type: 'line',
+                                    label: 'times',
+                                    data: timeArray,
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    backgroundColor: 'rgba(0, 0, 0, 0)',
+                                    yAxisID: 'time',
+                                },
+                                {
+                                    label: 'Mark',
+                                    data: markArray,
+                                    borderColor: 'rgba(0, 0, 0, 0)',
+                                    backgroundColor: 'rgba(192, 75, 192, 0.5)',
+                                    yAxisID: 'mark',
+                                }
+                            ]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [
+
+                                    {
+                                        id: "mark",
+                                        position: 'right',
+                                        ticks: {
+                                            beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Mark'
+                                        }
+                                    }, {
+                                        id: "time",
+                                        ticks: {
+                                            beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Time(s)'
+                                        }
+                                    }
+                                ]
+                            },
+                        }
+                    })
+                    },
+                error: function () {
+                    alert('Fail');
+
+                    }
+                });
+
+        })
+    // sau khi dung linq sort (diem va time) lam bai(orderByDescending(o=>o.diem).ThenOrderBy(o=>o.time)) =>> tra ve 1 list user
+
+
+                    $("#my-table").DataTable({
+                        "responsive": true,
+                        "autoWidth": false,
+                        "paging": true,
+                        "ordering": true,
+                        "searching": true,
+
+                    });
+    </script>
+}
+
+
+

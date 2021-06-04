@@ -1,0 +1,47 @@
+table {
+    border: 1px gainsboro solid;
+}
+
+
+/* table:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+} */
+
+table tr th {
+    text-align: center;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table span a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+table:hover {
+    cursor: pointer;
+}
+
+.thead-inverse {
+    background-color: rgb(216, 214, 214);
+}
+
+table tbody tr:hover {
+    background-color: rgb(243, 237, 237);
+}
+
+.cart-page h1 {
+    color: black;
+    margin-bottom: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

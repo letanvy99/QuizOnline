@@ -1,0 +1,121 @@
+﻿@model IEnumerable<Model.EF.Exam>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .banner-img img, inner-page {
+        height: 350px;
+    }
+
+</style>
+<section class="banner inner-page">
+    <div class="banner-img"><img src="~/Asserts/Client/images/banner/cart.jpg" alt=""></div>
+    <div class="page-title">
+        <div class="container">
+            <h1>Danh sách bài kiểm tra</h1>
+            <div id="countdown"></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <br>
+    <hr class="">
+
+    <table class="table table-striped" id="my-table">
+        <thead class="bg-primary">
+        <th>Bài kiểm tra</th>
+        <th>Số lượng câu hỏi</th>
+        <th>Thời gian làm bài</th>
+        <th>Thời gian bắt đầu</th>
+        <th>Thời gian kết thúc</th>
+        <th>Làm bài</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.ExamID)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExamName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantityQuestion)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExamTime)
+                    </td>
+
+
+                    <td>
+                        @*@Html.DisplayFor(modelItem => item.StartDay)*@
+
+                        @item.StartDay.Value.ToString("dd/MM/yyy HH:mm")
+                    </td>
+                    <td>
+                        @*@Html.DisplayFor(modelItem => item.EndDay)*@
+                        @item.EndDay.Value.ToString("dd/MM/yyy HH:mm")
+                    </td>
+                    <td>
+                        <button type="submit" class="details btn-info" data-toggle="modal" data-id="@item.ExamID"
+                                data-target="#modal-details">
+                            Làm bài
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+    <div class="modal modal-exam-code" tabindex="-1" id="myModal" role="dialog">
+        <div id='myModalContent'></div>
+    </div>
+</div>
+
+
+<link href="~/Asserts/Client/css/modal-for-quiz.css" rel="stylesheet" />
+@section jsFooter{
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/Asserts/Client/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+    <script>
+        var detailUrl = '/Exam/Details';
+        $(document).ready(function () {
+            $('#my-table .details').off('click').click(function () {
+                $(":input").val('');
+                var $buttonClicked = $(this);
+                //var examID = parseInt($(this).closest("tr").find("td").eq(0).html());
+                var examID = $buttonClicked.attr('data-id');
+                var options = { "backdrop": "static", keyboard: true };
+                $.ajax({
+                    type: "GET",
+                    url: detailUrl,
+                    contentType: "application/json; charset=utf-8",
+                    data: { "examID": examID },
+                    datatype: "json",
+                    success: function (data) {
+                        @*window.location.href = '@Url.Action("Details", "Exam")';*@
+                        $('#myModalContent').html(data);
+                        $('#myModal').modal(options);
+                        $('#myModal').modal('show');
+
+                    },
+                    error: function () {
+                        alert("Dynamic content load failed.");
+                        //location.reload();
+                    }
+                });
+            });
+
+        });
+
+    </script>
+
+}
